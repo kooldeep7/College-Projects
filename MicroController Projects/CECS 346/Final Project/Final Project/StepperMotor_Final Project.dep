@@ -1,0 +1,12 @@
+Dependencies for Project 'StepperMotor', Target 'Final Project': (DO NOT MODIFY !)
+F (.\startup.s)(0x519B008A)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\stepper.c)(0x5CDF5ABE)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\stepper.o --omf_browse .\stepper.crf --depend .\stepper.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5CC283FF)
+I (tm4c123gh6pm.h)(0x5388DEFA)
+I (systick.h)(0x5CD283E1)
+F (.\SysTick.c)(0x5CDF5ABE)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\systick.o --omf_browse .\systick.crf --depend .\systick.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5CC283FF)
+I (tm4c123gh6pm.h)(0x5388DEFA)
+F (.\main.c)(0x5CDF5A89)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5CC283FF)
+I (stepper.h)(0x5CDF08E3)
