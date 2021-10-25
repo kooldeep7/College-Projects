@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/KuldeepGohil/Desktop/labs/LAB 05/Lab5/Lab5/CECS301_Lab5_TB_isim_beh.exe" -prj "C:/Users/KuldeepGohil/Desktop/labs/LAB 05/Lab5/Lab5/CECS301_Lab5_TB_beh.prj" "work.CECS301_Lab5_TB" "work.glbl" 

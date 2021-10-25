@@ -1,0 +1,285 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml EncDec.twx EncDec.ncd -o EncDec.twr EncDec.pcf
+
+Design file:              EncDec.ncd
+Physical constraint file: EncDec.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock In<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out<0>      |        14.833(F)|      SLOW  |         6.977(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<1>      |        14.982(F)|      SLOW  |         7.080(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<2>      |        14.948(F)|      SLOW  |         6.841(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<3>      |        15.025(F)|      SLOW  |         6.891(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<4>      |        14.403(F)|      SLOW  |         6.434(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<5>      |        14.472(F)|      SLOW  |         6.494(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<6>      |        14.209(F)|      SLOW  |         6.376(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<7>      |        14.305(F)|      SLOW  |         6.435(F)|      FAST  |Encoder/_n0020    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock In<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out<0>      |        13.900(F)|      SLOW  |         6.780(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<1>      |        14.049(F)|      SLOW  |         6.883(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<2>      |        14.015(F)|      SLOW  |         6.644(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<3>      |        14.092(F)|      SLOW  |         6.694(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<4>      |        13.470(F)|      SLOW  |         6.237(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<5>      |        13.539(F)|      SLOW  |         6.297(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<6>      |        13.276(F)|      SLOW  |         6.179(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<7>      |        13.372(F)|      SLOW  |         6.238(F)|      FAST  |Encoder/_n0020    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock In<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out<0>      |        13.955(F)|      SLOW  |         6.818(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<1>      |        14.104(F)|      SLOW  |         6.921(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<2>      |        14.070(F)|      SLOW  |         6.682(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<3>      |        14.147(F)|      SLOW  |         6.732(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<4>      |        13.525(F)|      SLOW  |         6.275(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<5>      |        13.594(F)|      SLOW  |         6.335(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<6>      |        13.331(F)|      SLOW  |         6.217(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<7>      |        13.427(F)|      SLOW  |         6.276(F)|      FAST  |Encoder/_n0020    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock In<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out<0>      |        13.671(F)|      SLOW  |         6.659(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<1>      |        13.820(F)|      SLOW  |         6.762(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<2>      |        13.786(F)|      SLOW  |         6.523(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<3>      |        13.863(F)|      SLOW  |         6.573(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<4>      |        13.241(F)|      SLOW  |         6.116(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<5>      |        13.310(F)|      SLOW  |         6.176(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<6>      |        13.047(F)|      SLOW  |         6.058(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<7>      |        13.143(F)|      SLOW  |         6.117(F)|      FAST  |Encoder/_n0020    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock In<4> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out<0>      |        13.834(F)|      SLOW  |         6.537(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<1>      |        13.983(F)|      SLOW  |         6.640(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<2>      |        13.949(F)|      SLOW  |         6.401(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<3>      |        14.026(F)|      SLOW  |         6.451(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<4>      |        13.404(F)|      SLOW  |         5.994(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<5>      |        13.473(F)|      SLOW  |         6.054(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<6>      |        13.210(F)|      SLOW  |         5.936(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<7>      |        13.306(F)|      SLOW  |         5.995(F)|      FAST  |Encoder/_n0020    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock In<5> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out<0>      |        14.175(F)|      SLOW  |         6.885(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<1>      |        14.324(F)|      SLOW  |         6.988(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<2>      |        14.290(F)|      SLOW  |         6.749(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<3>      |        14.367(F)|      SLOW  |         6.799(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<4>      |        13.745(F)|      SLOW  |         6.342(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<5>      |        13.814(F)|      SLOW  |         6.402(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<6>      |        13.551(F)|      SLOW  |         6.284(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<7>      |        13.647(F)|      SLOW  |         6.343(F)|      FAST  |Encoder/_n0020    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock In<6> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out<0>      |        14.459(F)|      SLOW  |         6.661(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<1>      |        14.608(F)|      SLOW  |         6.764(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<2>      |        14.574(F)|      SLOW  |         6.525(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<3>      |        14.651(F)|      SLOW  |         6.575(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<4>      |        14.029(F)|      SLOW  |         6.118(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<5>      |        14.098(F)|      SLOW  |         6.178(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<6>      |        13.835(F)|      SLOW  |         6.060(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<7>      |        13.931(F)|      SLOW  |         6.119(F)|      FAST  |Encoder/_n0020    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock In<7> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out<0>      |        14.482(F)|      SLOW  |         7.114(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<1>      |        14.631(F)|      SLOW  |         7.217(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<2>      |        14.597(F)|      SLOW  |         6.978(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<3>      |        14.674(F)|      SLOW  |         7.028(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<4>      |        14.052(F)|      SLOW  |         6.571(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<5>      |        14.121(F)|      SLOW  |         6.631(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<6>      |        13.858(F)|      SLOW  |         6.513(F)|      FAST  |Encoder/_n0020    |   0.000|
+Out<7>      |        13.954(F)|      SLOW  |         6.572(F)|      FAST  |Encoder/_n0020    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock In<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+In<0>          |         |         |    0.915|    0.915|
+In<1>          |         |         |    0.710|    0.710|
+In<2>          |         |         |    0.054|    0.054|
+In<3>          |         |         |   -0.339|   -0.339|
+In<4>          |         |         |    0.431|    0.431|
+In<5>          |         |         |   -0.392|   -0.392|
+In<6>          |         |         |   -0.472|   -0.472|
+In<7>          |         |         |    0.072|    0.072|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock In<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+In<0>          |         |         |    1.026|    1.026|
+In<1>          |         |         |    0.821|    0.821|
+In<2>          |         |         |    0.165|    0.165|
+In<3>          |         |         |   -0.142|   -0.142|
+In<4>          |         |         |    0.542|    0.542|
+In<5>          |         |         |   -0.195|   -0.195|
+In<6>          |         |         |   -0.275|   -0.275|
+In<7>          |         |         |    0.183|    0.183|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock In<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+In<0>          |         |         |    0.917|    0.917|
+In<1>          |         |         |    0.712|    0.712|
+In<2>          |         |         |    0.056|    0.056|
+In<3>          |         |         |   -0.180|   -0.180|
+In<4>          |         |         |    0.433|    0.433|
+In<5>          |         |         |   -0.233|   -0.233|
+In<6>          |         |         |   -0.313|   -0.313|
+In<7>          |         |         |    0.095|    0.095|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock In<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+In<0>          |         |         |    1.268|    1.268|
+In<1>          |         |         |    1.063|    1.063|
+In<2>          |         |         |    0.407|    0.407|
+In<3>          |         |         |   -0.021|   -0.021|
+In<4>          |         |         |    0.784|    0.784|
+In<5>          |         |         |   -0.074|   -0.074|
+In<6>          |         |         |   -0.154|   -0.154|
+In<7>          |         |         |    0.425|    0.425|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock In<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+In<0>          |         |         |    1.487|    1.487|
+In<1>          |         |         |    1.282|    1.282|
+In<2>          |         |         |    0.626|    0.626|
+In<3>          |         |         |    0.101|    0.101|
+In<4>          |         |         |    1.003|    1.003|
+In<5>          |         |         |    0.048|    0.048|
+In<6>          |         |         |   -0.026|   -0.026|
+In<7>          |         |         |    0.644|    0.644|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock In<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+In<0>          |         |         |    0.750|    0.750|
+In<1>          |         |         |    0.545|    0.545|
+In<2>          |         |         |   -0.032|   -0.032|
+In<3>          |         |         |   -0.247|   -0.247|
+In<4>          |         |         |    0.266|    0.266|
+In<5>          |         |         |   -0.300|   -0.300|
+In<6>          |         |         |   -0.380|   -0.380|
+In<7>          |         |         |    0.028|    0.028|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock In<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+In<0>          |         |         |    1.157|    1.157|
+In<1>          |         |         |    0.952|    0.952|
+In<2>          |         |         |    0.296|    0.296|
+In<3>          |         |         |   -0.023|   -0.023|
+In<4>          |         |         |    0.673|    0.673|
+In<5>          |         |         |   -0.076|   -0.076|
+In<6>          |         |         |   -0.156|   -0.156|
+In<7>          |         |         |    0.314|    0.314|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock In<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+In<0>          |         |         |    0.437|    0.437|
+In<1>          |         |         |    0.232|    0.232|
+In<2>          |         |         |   -0.261|   -0.261|
+In<3>          |         |         |   -0.476|   -0.476|
+In<4>          |         |         |    0.003|    0.003|
+In<5>          |         |         |   -0.529|   -0.529|
+In<6>          |         |         |   -0.609|   -0.609|
+In<7>          |         |         |   -0.201|   -0.201|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon May 01 00:41:40 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 215 MB
+
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="TwoMatrixMultiplication_axi_gpio_18_7_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1619272298">
+  <File Type="PA-TCL" Name="TwoMatrixMultiplication_axi_gpio_18_7.tcl"/>
+  <File Type="REPORTS-TCL" Name="TwoMatrixMultiplication_axi_gpio_18_7_reports.tcl"/>
+  <File Type="RDS-RDS" Name="TwoMatrixMultiplication_axi_gpio_18_7.vds"/>
+  <File Type="RDS-DCP" Name="TwoMatrixMultiplication_axi_gpio_18_7.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TwoMatrixMultiplication_axi_gpio_18_7">
+    <File Path="$PSRCDIR/sources_1/bd/TwoMatrixMultiplication/ip/TwoMatrixMultiplication_axi_gpio_18_7/TwoMatrixMultiplication_axi_gpio_18_7.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../midtermProject/midtermProject.srcs/sources_1/bd/TwoMatrixMultiplication/ip/TwoMatrixMultiplication_axi_gpio_18_7/TwoMatrixMultiplication_axi_gpio_18_7.xci"/>
+        <Attr Name="ImportTime" Val="1619272203"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="TwoMatrixMultiplication_axi_gpio_18_7"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TwoMatrixMultiplication_axi_gpio_18_7">
+    <File Path="$PSRCDIR/sources_1/bd/TwoMatrixMultiplication/ip/TwoMatrixMultiplication_axi_gpio_18_7/TwoMatrixMultiplication_axi_gpio_18_7.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../midtermProject/midtermProject.srcs/sources_1/bd/TwoMatrixMultiplication/ip/TwoMatrixMultiplication_axi_gpio_18_7/TwoMatrixMultiplication_axi_gpio_18_7.xci"/>
+        <Attr Name="ImportTime" Val="1619272203"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="TwoMatrixMultiplication_axi_gpio_18_7"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

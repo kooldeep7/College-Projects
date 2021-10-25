@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 11 03:30:09 2021
+# Process ID: 13744
+# Current directory: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/finalProjectHDMIPong
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8088 C:\Users\KuldeepGohil\Desktop\Spring2021\CECS460\finalProjectHDMIPong\finalProjectHDMIPong.xpr
+# Log file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/finalProjectHDMIPong/vivado.log
+# Journal file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/finalProjectHDMIPong\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/finalProjectHDMIPong/finalProjectHDMIPong.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/final_pong_hdmi/zybo-z7-hdmi-master/hardware/zybo_z7_hdmi_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/final_pong_hdmi/zybo-z7-hdmi-master/hardware/zybo_z7_hdmi_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'S:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_axi_dynclk_0_0
+system_rgb2dvi_0_0
+
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 831.398 ; gain = 242.926
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/finalProjectHDMIPong/finalProjectHDMIPong.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/finalProjectHDMIPong/finalProjectHDMIPong.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/finalProjectHDMIPong/finalProjectHDMIPong.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/finalProjectHDMIPong/finalProjectHDMIPong.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 11 03:52:24 2021...

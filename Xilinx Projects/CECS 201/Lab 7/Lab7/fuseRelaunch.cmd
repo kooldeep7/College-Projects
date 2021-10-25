@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Kuldeep/Desktop/Lab 7/Lab7/topLevel_isim_beh.exe" -prj "C:/Users/Kuldeep/Desktop/Lab 7/Lab7/topLevel_beh.prj" "work.topLevel" "work.glbl" 

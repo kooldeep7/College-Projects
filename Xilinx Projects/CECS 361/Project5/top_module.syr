@@ -1,0 +1,527 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: top_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_module"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : top_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\CECS 361\Project5\vga.v" into library work
+Parsing module <vga_sync>.
+Analyzing Verilog file "E:\CECS 361\Project5\pixel_gen.v" into library work
+Parsing module <pixel_gen>.
+Analyzing Verilog file "E:\CECS 361\Project5\AISO.v" into library work
+Parsing module <AISO>.
+Analyzing Verilog file "E:\CECS 361\Project5\top_module.v" into library work
+Parsing module <top_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_module>.
+
+Elaborating module <AISO>.
+
+Elaborating module <vga_sync>.
+
+Elaborating module <pixel_gen>.
+WARNING:HDLCompiler:413 - "E:\CECS 361\Project5\pixel_gen.v" Line 86: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\CECS 361\Project5\pixel_gen.v" Line 97: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\CECS 361\Project5\pixel_gen.v" Line 99: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\CECS 361\Project5\pixel_gen.v" Line 108: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\CECS 361\Project5\pixel_gen.v" Line 109: Result of 32-bit expression is truncated to fit in 10-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_module>.
+    Related source file is "E:\CECS 361\Project5\top_module.v".
+    Summary:
+	no macro.
+Unit <top_module> synthesized.
+
+Synthesizing Unit <AISO>.
+    Related source file is "E:\CECS 361\Project5\AISO.v".
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <AISO> synthesized.
+
+Synthesizing Unit <vga_sync>.
+    Related source file is "E:\CECS 361\Project5\vga.v".
+    Found 10-bit register for signal <h_count>.
+    Found 10-bit register for signal <v_count>.
+    Found 2-bit register for signal <count>.
+    Found 2-bit adder for signal <GND_3_o_count[1]_add_0_OUT> created at line 35.
+    Found 10-bit adder for signal <h_count[9]_GND_3_o_add_12_OUT> created at line 65.
+    Found 10-bit adder for signal <v_count[9]_GND_3_o_add_16_OUT> created at line 74.
+    Found 10-bit comparator lessequal for signal <n0006> created at line 52
+    Found 10-bit comparator lessequal for signal <n0008> created at line 52
+    Found 10-bit comparator lessequal for signal <n0012> created at line 53
+    Found 10-bit comparator lessequal for signal <n0014> created at line 53
+    Found 10-bit comparator greater for signal <v_count[9]_GND_3_o_LessThan_11_o> created at line 56
+    Found 10-bit comparator greater for signal <h_count[9]_PWR_3_o_LessThan_12_o> created at line 56
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <vga_sync> synthesized.
+
+Synthesizing Unit <pixel_gen>.
+    Related source file is "E:\CECS 361\Project5\pixel_gen.v".
+    Found 10-bit register for signal <ball_x_reg>.
+    Found 10-bit register for signal <ball_y_reg>.
+    Found 10-bit register for signal <bar_y_reg>.
+    Found 10-bit register for signal <y_delta_reg>.
+    Found 10-bit register for signal <x_delta_reg>.
+    Found 11-bit adder for signal <n0139> created at line 86.
+    Found 10-bit adder for signal <bar_y_reg[9]_GND_4_o_add_14_OUT> created at line 97.
+    Found 11-bit adder for signal <n0143> created at line 108.
+    Found 11-bit adder for signal <n0145> created at line 109.
+    Found 10-bit adder for signal <ball_x_reg[9]_x_delta_reg[9]_add_30_OUT> created at line 116.
+    Found 10-bit adder for signal <ball_y_reg[9]_y_delta_reg[9]_add_32_OUT> created at line 117.
+    Found 10-bit subtractor for signal <bar_y_b> created at line 37.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_17_OUT<9:0>> created at line 99.
+    Found 10-bit subtractor for signal <ball_x_r> created at line 51.
+    Found 10-bit subtractor for signal <ball_y_b> created at line 52.
+    Found 10-bit comparator lessequal for signal <n0003> created at line 74
+    Found 10-bit comparator lessequal for signal <n0005> created at line 74
+    Found 10-bit comparator lessequal for signal <n0013> created at line 87
+    Found 10-bit comparator lessequal for signal <n0015> created at line 87
+    Found 10-bit comparator lessequal for signal <n0018> created at line 88
+    Found 10-bit comparator lessequal for signal <n0021> created at line 88
+    Found 10-bit comparator greater for signal <bar_y_b[9]_GND_4_o_LessThan_14_o> created at line 96
+    Found 10-bit comparator greater for signal <GND_4_o_bar_y_t[9]_LessThan_16_o> created at line 98
+    Found 10-bit comparator lessequal for signal <n0039> created at line 112
+    Found 10-bit comparator lessequal for signal <n0041> created at line 112
+    Found 10-bit comparator lessequal for signal <n0044> created at line 113
+    Found 10-bit comparator lessequal for signal <n0047> created at line 113
+    Found 10-bit comparator greater for signal <ball_y_t[9]_GND_4_o_LessThan_35_o> created at line 123
+    Found 10-bit comparator greater for signal <GND_4_o_ball_y_b[9]_LessThan_36_o> created at line 125
+    Found 10-bit comparator greater for signal <n0056> created at line 127
+    Found 10-bit comparator lessequal for signal <n0058> created at line 129
+    Found 10-bit comparator lessequal for signal <n0060> created at line 129
+    Found 10-bit comparator lessequal for signal <n0063> created at line 130
+    Found 10-bit comparator lessequal for signal <n0066> created at line 130
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred  19 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <pixel_gen> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 10-bit adder                                          : 4
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 3
+ 11-bit adder                                          : 3
+ 2-bit adder                                           : 1
+# Registers                                            : 10
+ 1-bit register                                        : 2
+ 10-bit register                                       : 7
+ 2-bit register                                        : 1
+# Comparators                                          : 25
+ 10-bit comparator greater                             : 7
+ 10-bit comparator lessequal                           : 18
+# Multiplexers                                         : 6
+ 10-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <y_delta_reg_3> in Unit <pg> is equivalent to the following 6 FFs/Latches, which will be removed : <y_delta_reg_4> <y_delta_reg_5> <y_delta_reg_6> <y_delta_reg_7> <y_delta_reg_8> <y_delta_reg_9> 
+INFO:Xst:2261 - The FF/Latch <x_delta_reg_3> in Unit <pg> is equivalent to the following 6 FFs/Latches, which will be removed : <x_delta_reg_4> <x_delta_reg_5> <x_delta_reg_6> <x_delta_reg_7> <x_delta_reg_8> <x_delta_reg_9> 
+WARNING:Xst:1710 - FF/Latch <y_delta_reg_0> (without init value) has a constant value of 0 in block <pg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <x_delta_reg_0> (without init value) has a constant value of 0 in block <pg>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <pixel_gen>.
+The following registers are absorbed into accumulator <ball_x_reg>: 1 register on signal <ball_x_reg>.
+The following registers are absorbed into accumulator <ball_y_reg>: 1 register on signal <ball_y_reg>.
+The following registers are absorbed into accumulator <bar_y_reg>: 1 register on signal <bar_y_reg>.
+Unit <pixel_gen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_sync>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <h_count>: 1 register on signal <h_count>.
+The following registers are absorbed into counter <v_count>: 1 register on signal <v_count>.
+Unit <vga_sync> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 10-bit adder                                          : 3
+ 10-bit subtractor                                     : 3
+# Counters                                             : 3
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+# Accumulators                                         : 3
+ 10-bit up accumulator                                 : 2
+ 10-bit updown accumulator                             : 1
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Comparators                                          : 25
+ 10-bit comparator greater                             : 7
+ 10-bit comparator lessequal                           : 18
+# Multiplexers                                         : 3
+ 3-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <y_delta_reg_0> (without init value) has a constant value of 0 in block <pixel_gen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x_delta_reg_0> (without init value) has a constant value of 0 in block <pixel_gen>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <y_delta_reg_3> in Unit <pixel_gen> is equivalent to the following 6 FFs/Latches, which will be removed : <y_delta_reg_4> <y_delta_reg_5> <y_delta_reg_6> <y_delta_reg_7> <y_delta_reg_8> <y_delta_reg_9> 
+INFO:Xst:2261 - The FF/Latch <x_delta_reg_3> in Unit <pixel_gen> is equivalent to the following 6 FFs/Latches, which will be removed : <x_delta_reg_4> <x_delta_reg_5> <x_delta_reg_6> <x_delta_reg_7> <x_delta_reg_8> <x_delta_reg_9> 
+WARNING:Xst:1710 - FF/Latch <ball_x_reg_0> (without init value) has a constant value of 0 in block <pixel_gen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ball_y_reg_0> (without init value) has a constant value of 0 in block <pixel_gen>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <top_module> ...
+
+Optimizing unit <pixel_gen> ...
+WARNING:Xst:1710 - FF/Latch <bar_y_reg_0> (without init value) has a constant value of 0 in block <pixel_gen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bar_y_reg_1> (without init value) has a constant value of 0 in block <pixel_gen>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <vga_sync> ...
+WARNING:Xst:1710 - FF/Latch <pg/bar_y_reg_9> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pg/bar_y_reg_1> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pg/bar_y_reg_0> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_module, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 55
+ Flip-Flops                                            : 55
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 302
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 2
+#      LUT2                        : 29
+#      LUT3                        : 23
+#      LUT4                        : 75
+#      LUT5                        : 19
+#      LUT6                        : 42
+#      MUXCY                       : 66
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 38
+# FlipFlops/Latches                : 55
+#      FDC                         : 4
+#      FDCE                        : 49
+#      FDPE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 3
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              55  out of  126800     0%  
+ Number of Slice LUTs:                  195  out of  63400     0%  
+    Number used as Logic:               195  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    197
+   Number with an unused Flip Flop:     142  out of    197    72%  
+   Number with an unused LUT:             2  out of    197     1%  
+   Number of fully used LUT-FF pairs:    53  out of    197    26%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    210     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 55    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.242ns (Maximum Frequency: 308.414MHz)
+   Minimum input arrival time before clock: 1.521ns
+   Maximum output required time after clock: 4.899ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.242ns (frequency: 308.414MHz)
+  Total number of paths / destination ports: 3186 / 157
+-------------------------------------------------------------------------
+Delay:               3.242ns (Levels of Logic = 5)
+  Source:            pg/ball_y_reg_5 (FF)
+  Destination:       pg/x_delta_reg_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pg/ball_y_reg_5 to pg/x_delta_reg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            15   0.361   0.748  pg/ball_y_reg_5 (pg/ball_y_reg_5)
+     LUT5:I0->O            2   0.097   0.299  pg/Msub_ball_y_b_xor<0>711 (pg/Msub_ball_y_b_xor<0>71)
+     LUT6:I5->O            3   0.097   0.566  pg/Msub_ball_y_b_xor<0>10 (pg/ball_y_b<9>)
+     LUT4:I0->O            0   0.097   0.000  pg/Mcompar_bar_y_t[9]_ball_y_b[9]_LessThan_40_o_lutdi4 (pg/Mcompar_bar_y_t[9]_ball_y_b[9]_LessThan_40_o_lutdi4)
+     MUXCY:DI->O           3   0.567   0.305  pg/Mcompar_bar_y_t[9]_ball_y_b[9]_LessThan_40_o_cy<4> (pg/bar_y_t[9]_ball_y_b[9]_LessThan_40_o)
+     LUT5:I4->O            1   0.097   0.000  pg/x_delta_reg_1_dpot (pg/x_delta_reg_1_dpot)
+     FDCE:D                    0.008          pg/x_delta_reg_1
+    ----------------------------------------
+    Total                      3.242ns (1.324ns logic, 1.918ns route)
+                                       (40.8% logic, 59.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 25 / 15
+-------------------------------------------------------------------------
+Offset:              1.521ns (Levels of Logic = 3)
+  Source:            btn<1> (PAD)
+  Destination:       pg/bar_y_reg_8 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<1> to pg/bar_y_reg_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.001   0.534  btn_1_IBUF (btn_1_IBUF)
+     LUT3:I0->O            3   0.097   0.389  pg/btn[1]_bar_y_b[9]_AND_9_o2 (pg/btn[1]_bar_y_b[9]_AND_9_o)
+     LUT6:I4->O            7   0.097   0.307  pg/_n0175_inv (pg/_n0175_inv)
+     FDCE:CE                   0.095          pg/bar_y_reg_2
+    ----------------------------------------
+    Total                      1.521ns (0.290ns logic, 1.231ns route)
+                                       (19.1% logic, 80.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1282 / 5
+-------------------------------------------------------------------------
+Offset:              4.899ns (Levels of Logic = 8)
+  Source:            pg/ball_x_reg_5 (FF)
+  Destination:       rgb<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: pg/ball_x_reg_5 to rgb<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.361   0.744  pg/ball_x_reg_5 (pg/ball_x_reg_5)
+     LUT6:I0->O            3   0.097   0.305  pg/Msub_ball_x_r_xor<0>821 (pg/Msub_ball_x_r_xor<0>82)
+     LUT6:I5->O            2   0.097   0.561  pg/Msub_ball_x_r_xor<0>8 (pg/ball_x_r<7>)
+     LUT4:I0->O            0   0.097   0.000  pg/Mcompar_pixel_x[9]_ball_x_r[9]_LessThan_28_o_lutdi3 (pg/Mcompar_pixel_x[9]_ball_x_r[9]_LessThan_28_o_lutdi3)
+     MUXCY:DI->O           1   0.567   0.379  pg/Mcompar_pixel_x[9]_ball_x_r[9]_LessThan_28_o_cy<3> (pg/Mcompar_pixel_x[9]_ball_x_r[9]_LessThan_28_o_cy<3>)
+     LUT5:I3->O            2   0.097   0.561  pg/Mcompar_pixel_x[9]_ball_x_r[9]_LessThan_28_o_cy<4> (pg/pixel_x[9]_ball_x_r[9]_LessThan_28_o)
+     LUT4:I0->O            2   0.097   0.561  pg/Mmux_rgb111 (pg/Mmux_rgb11)
+     LUT5:I1->O            1   0.097   0.279  pg/Mmux_rgb12 (rgb_0_OBUF)
+     OBUF:I->O                 0.000          rgb_0_OBUF (rgb<0>)
+    ----------------------------------------
+    Total                      4.899ns (1.510ns logic, 3.389ns route)
+                                       (30.8% logic, 69.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.242|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.36 secs
+ 
+--> 
+
+Total memory usage is 423236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

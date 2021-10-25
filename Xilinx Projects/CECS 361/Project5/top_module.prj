@@ -1,0 +1,4 @@
+verilog work "vga.v"
+verilog work "pixel_gen.v"
+verilog work "AISO.v"
+verilog work "top_module.v"

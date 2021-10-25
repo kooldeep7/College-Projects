@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kuldeep\Desktop\New folder (3)\CECS 301 2019\Project3\topModule.ncd
+OUTFILE=C:\Users\Kuldeep\Desktop\New folder (3)\CECS 301 2019\Project3\topModule.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\Kuldeep\Desktop\New folder (3)\CECS 301 2019\Project3
+LICENSE=WebPack
+USER_INFO=211302699_0_0_854

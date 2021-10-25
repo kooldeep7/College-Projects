@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\New folder (3)\CECS 301 2019\Project2\sevensegdisplay.ncd
+OUTFILE=E:\New folder (3)\CECS 301 2019\Project2\sevensegdisplay.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=E:\New folder (3)\CECS 301 2019\Project2
+LICENSE=WebPack
+USER_INFO=__0_0_0

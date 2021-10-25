@@ -1,0 +1,8 @@
+vhdtdtfi -lang verilog -prj Ripple-Carry -o "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/Ripple-Carry/mux.tfi" -lib work "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/Ripple-Carry//mux.v" -module mux -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/Ripple-Carry/mux.xst" -ofn "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/Ripple-Carry/mux.syr" 
+xst -intstyle ise -ifn "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/Ripple-Carry/mux.xst" -ofn "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/Ripple-Carry/mux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "mux.ngc" mux.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mux_map.ncd mux.ngd mux.pcf 
+par -w -intstyle ise -ol high -mt off mux_map.ncd mux.ncd mux.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mux.twx mux.ncd -o mux.twr mux.pcf 
+bitgen -intstyle ise -f mux.ut mux.ncd 

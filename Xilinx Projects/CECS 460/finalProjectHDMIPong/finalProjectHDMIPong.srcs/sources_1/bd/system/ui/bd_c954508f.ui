@@ -1,0 +1,48 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port btns_4bits -pg 1 -y 80 -defaultsOSRD
+preplace port DDR -pg 1 -y 160 -defaultsOSRD
+preplace port Vaux7_0 -pg 1 -y 860 -defaultsOSRD
+preplace port sws_4bits -pg 1 -y 370 -defaultsOSRD
+preplace port Vaux14_0 -pg 1 -y 880 -defaultsOSRD
+preplace port hdmi_out -pg 1 -y 450 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 180 -defaultsOSRD
+preplace inst switches -pg 1 -lvl 5 -y 370 -defaultsOSRD
+preplace inst buttons -pg 1 -lvl 5 -y 80 -defaultsOSRD
+preplace inst rst_ps7_0_100M_1 -pg 1 -lvl 2 -y 740 -defaultsOSRD
+preplace inst xadc_joystick -pg 1 -lvl 3 -y 870 -defaultsOSRD
+preplace inst hdmi -pg 1 -lvl 4 -y 460 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 420 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 440 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 210 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 2 N 410 NJ
+preplace netloc processing_system7_0_DDR 1 1 5 NJ 160 NJ 160 NJ 160 NJ 160 NJ
+preplace netloc switches_GPIO 1 5 1 NJ
+preplace netloc hdmi_hdmi_out 1 4 2 NJ 450 NJ
+preplace netloc hdmi_M00_AXI 1 0 5 30 90 NJ 90 NJ 90 NJ 90 1460
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 510
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 520 200 NJ 200 1200 200 1480
+preplace netloc Vaux7_0_1 1 0 3 NJ 860 NJ 860 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 40 340 500
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 2 N 430 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 3 910 350 NJ 350 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 NJ 180 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc rst_ps7_0_100M_1_peripheral_aresetn 1 2 1 880
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 890
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 2 N 450 NJ
+preplace netloc buttons_GPIO 1 5 1 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 40 100 530 190 900 340 1190 340 1470
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 3 880 60 NJ 60 NJ
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 4 20 80 500 150 NJ 150 1180J
+preplace netloc Vaux14_0_1 1 0 3 NJ 880 NJ 880 NJ
+levelinfo -pg 1 0 270 710 1050 1330 1590 1720 -top 0 -bot 1000
+"
+}
+{
+   "da_axi4_cnt":"10",
+   "da_board_cnt":"5",
+   "da_clkrst_cnt":"2",
+   "da_ps7_cnt":"1"
+}

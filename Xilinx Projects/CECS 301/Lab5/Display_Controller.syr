@@ -1,0 +1,591 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Display_Controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Display_Controller.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Display_Controller"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Display_Controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\pixel_controller.v" into library work
+Parsing module <pixel_controller>.
+Analyzing Verilog file "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\pixel_clk.v" into library work
+Parsing module <pixel_clk>.
+Analyzing Verilog file "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\hex_to_7_seg.v" into library work
+Parsing module <hex_to_7_seg>.
+Analyzing Verilog file "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\ad_mux.v" into library work
+Parsing module <ad_mux>.
+Analyzing Verilog file "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\Display_Controller.v" into library work
+Parsing module <Display_Controller>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Display_Controller>.
+
+Elaborating module <pixel_clk>.
+
+Elaborating module <pixel_controller>.
+
+Elaborating module <ad_mux>.
+WARNING:HDLCompiler:189 - "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\Display_Controller.v" Line 18: Size mismatch in connection of port <addr>. Formal port size is 8-bit while actual signal size is 16-bit.
+
+Elaborating module <hex_to_7_seg>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Display_Controller>.
+    Related source file is "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\Display_Controller.v".
+WARNING:Xst:647 - Input <S<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Display_Controller> synthesized.
+
+Synthesizing Unit <pixel_clk>.
+    Related source file is "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\pixel_clk.v".
+    Found 32-bit register for signal <i>.
+    Found 1-bit register for signal <led_clk>.
+    Found 32-bit adder for signal <i[31]_GND_2_o_add_1_OUT> created at line 42.
+    Found 32-bit comparator greater for signal <n0002> created at line 44
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <pixel_clk> synthesized.
+
+Synthesizing Unit <pixel_controller>.
+    Related source file is "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\pixel_controller.v".
+    Found 3-bit register for signal <PS>.
+    Found finite state machine <FSM_0> for signal <PS>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <pixel_controller> synthesized.
+
+Synthesizing Unit <ad_mux>.
+    Related source file is "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\ad_mux.v".
+    Found 4-bit 7-to-1 multiplexer for signal <ad_out> created at line 33.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ad_mux> synthesized.
+
+Synthesizing Unit <hex_to_7_seg>.
+    Related source file is "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\hex_to_7_seg.v".
+    Found 16x7-bit Read Only RAM for signal <_n0024>
+    Summary:
+	inferred   1 RAM(s).
+Unit <hex_to_7_seg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 32-bit register                                       : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 7-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <hex_to_7_seg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0024> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <hex_to_7_seg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 7-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <PS[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00000001
+ 001   | 00000010
+ 010   | 00000100
+ 011   | 00001000
+ 100   | 00010000
+ 101   | 00100000
+ 110   | 01000000
+ 111   | 10000000
+-------------------
+
+Optimizing unit <Display_Controller> ...
+
+Optimizing unit <pixel_clk> ...
+WARNING:Xst:1710 - FF/Latch <pixclk/i_31> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_30> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_29> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_28> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_27> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_26> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_25> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_24> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_23> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_22> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_21> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_20> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_19> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_18> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixclk/i_17> (without init value) has a constant value of 0 in block <Display_Controller>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Display_Controller, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Display_Controller.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 113
+#      GND                         : 1
+#      INV                         : 10
+#      LUT1                        : 16
+#      LUT2                        : 22
+#      LUT3                        : 2
+#      LUT5                        : 4
+#      LUT6                        : 15
+#      MUXCY                       : 24
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 26
+#      FDC                         : 24
+#      FDCE                        : 1
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 40
+#      IBUF                        : 25
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              26  out of  126800     0%  
+ Number of Slice LUTs:                   69  out of  63400     0%  
+    Number used as Logic:                69  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     73
+   Number with an unused Flip Flop:      47  out of     73    64%  
+   Number with an unused LUT:             4  out of     73     5%  
+   Number of fully used LUT-FF pairs:    22  out of     73    30%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          49
+ Number of bonded IOBs:                  41  out of    210    19%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+pixclk/led_clk                     | NONE(pixcon/PS_FSM_FFd7)| 8     |
+clk                                | BUFGP                   | 18    |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.735ns (Maximum Frequency: 267.730MHz)
+   Minimum input arrival time before clock: 0.735ns
+   Maximum output required time after clock: 2.601ns
+   Maximum combinational path delay: 2.228ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pixclk/led_clk'
+  Clock period: 0.671ns (frequency: 1489.425MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               0.671ns (Levels of Logic = 0)
+  Source:            pixcon/PS_FSM_FFd8 (FF)
+  Destination:       pixcon/PS_FSM_FFd7 (FF)
+  Source Clock:      pixclk/led_clk rising
+  Destination Clock: pixclk/led_clk rising
+
+  Data Path: pixcon/PS_FSM_FFd8 to pixcon/PS_FSM_FFd7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              6   0.361   0.302  pixcon/PS_FSM_FFd8 (pixcon/PS_FSM_FFd8)
+     FDC:D                     0.008          pixcon/PS_FSM_FFd7
+    ----------------------------------------
+    Total                      0.671ns (0.369ns logic, 0.302ns route)
+                                       (55.0% logic, 45.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.735ns (frequency: 267.730MHz)
+  Total number of paths / destination ports: 5572 / 19
+-------------------------------------------------------------------------
+Delay:               3.735ns (Levels of Logic = 24)
+  Source:            pixclk/i_0 (FF)
+  Destination:       pixclk/i_16 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pixclk/i_0 to pixclk/i_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.361   0.279  pixclk/i_0 (pixclk/i_0)
+     INV:I->O              1   0.113   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_lut<0>_INV_0 (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<0> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<1> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<2> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<3> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<4> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<5> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<6> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<7> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<8> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<9> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<10> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<11> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<12> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<13> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<14> (pixclk/Madd_i[31]_GND_2_o_add_1_OUT_cy<14>)
+     XORCY:CI->O           3   0.370   0.693  pixclk/Madd_i[31]_GND_2_o_add_1_OUT_xor<15> (pixclk/i[31]_GND_2_o_add_1_OUT<15>)
+     LUT5:I0->O            0   0.097   0.000  pixclk/Mcompar_n0002_lutdi2 (pixclk/Mcompar_n0002_lutdi2)
+     MUXCY:DI->O           1   0.337   0.000  pixclk/Mcompar_n0002_cy<2> (pixclk/Mcompar_n0002_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Mcompar_n0002_cy<3> (pixclk/Mcompar_n0002_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Mcompar_n0002_cy<4> (pixclk/Mcompar_n0002_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pixclk/Mcompar_n0002_cy<5> (pixclk/Mcompar_n0002_cy<5>)
+     MUXCY:CI->O          18   0.262   0.374  pixclk/Mcompar_n0002_cy<6> (pixclk/Mcompar_n0002_cy<6>)
+     LUT2:I1->O            1   0.097   0.000  pixclk/Mmux_i[31]_GND_2_o_mux_3_OUT11 (pixclk/i[31]_GND_2_o_mux_3_OUT<0>)
+     FDC:D                     0.008          pixclk/i_0
+    ----------------------------------------
+    Total                      3.735ns (2.389ns logic, 1.346ns route)
+                                       (64.0% logic, 36.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pixclk/led_clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.735ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       pixcon/PS_FSM_FFd7 (FF)
+  Destination Clock: pixclk/led_clk rising
+
+  Data Path: reset to pixcon/PS_FSM_FFd7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   0.001   0.385  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.349          pixcon/PS_FSM_FFd7
+    ----------------------------------------
+    Total                      0.735ns (0.350ns logic, 0.385ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              0.735ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       pixclk/led_clk (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to pixclk/led_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   0.001   0.385  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.349          pixclk/i_0
+    ----------------------------------------
+    Total                      0.735ns (0.350ns logic, 0.385ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pixclk/led_clk'
+  Total number of paths / destination ports: 176 / 15
+-------------------------------------------------------------------------
+Offset:              2.601ns (Levels of Logic = 4)
+  Source:            pixcon/PS_FSM_FFd5 (FF)
+  Destination:       e (PAD)
+  Source Clock:      pixclk/led_clk rising
+
+  Data Path: pixcon/PS_FSM_FFd5 to e
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.361   0.706  pixcon/PS_FSM_FFd5 (pixcon/PS_FSM_FFd5)
+     LUT6:I1->O            4   0.097   0.393  mux4to1/Mmux_ad_out<2>1 (mux4to1/Mmux_ad_out<2>)
+     LUT2:I0->O            4   0.097   0.570  mux4to1/Mmux_ad_out<2>3 (hex<2>)
+     LUT6:I2->O            1   0.097   0.279  ht7s/Mram__n002441 (e_OBUF)
+     OBUF:I->O                 0.000          e_OBUF (e)
+    ----------------------------------------
+    Total                      2.601ns (0.652ns logic, 1.949ns route)
+                                       (25.1% logic, 74.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 168 / 7
+-------------------------------------------------------------------------
+Delay:               2.228ns (Levels of Logic = 5)
+  Source:            R<14> (PAD)
+  Destination:       e (PAD)
+
+  Data Path: R<14> to e
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.693  R_14_IBUF (R_14_IBUF)
+     LUT6:I0->O            4   0.097   0.393  mux4to1/Mmux_ad_out<2>1 (mux4to1/Mmux_ad_out<2>)
+     LUT2:I0->O            4   0.097   0.570  mux4to1/Mmux_ad_out<2>3 (hex<2>)
+     LUT6:I2->O            1   0.097   0.279  ht7s/Mram__n002441 (e_OBUF)
+     OBUF:I->O                 0.000          e_OBUF (e)
+    ----------------------------------------
+    Total                      2.228ns (0.292ns logic, 1.936ns route)
+                                       (13.1% logic, 86.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.735|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pixclk/led_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+pixclk/led_clk |    0.671|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.83 secs
+ 
+--> 
+
+Total memory usage is 482040 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

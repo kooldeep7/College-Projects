@@ -1,0 +1,1828 @@
+14:14:34 INFO  : Registering command handlers for SDK TCF services
+14:14:35 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab1\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+14:14:37 INFO  : XSCT server has started successfully.
+14:14:37 INFO  : Successfully done setting XSCT server connection channel  
+14:14:40 INFO  : Successfully done setting SDK workspace  
+14:14:40 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper.hdf.
+14:22:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:22:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+14:22:18 INFO  : 'jtag frequency' command is executed.
+14:22:18 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:22:18 INFO  : Context for 'APU' is selected.
+14:22:18 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:22:18 INFO  : 'configparams force-mem-access 1' command is executed.
+14:22:18 INFO  : Context for 'APU' is selected.
+14:22:18 INFO  : 'stop' command is executed.
+14:22:18 INFO  : 'ps7_init' command is executed.
+14:22:18 INFO  : 'ps7_post_config' command is executed.
+14:22:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:22:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:18 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:22:18 INFO  : 'configparams force-mem-access 0' command is executed.
+14:22:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:22:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:18 INFO  : 'con' command is executed.
+14:22:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+14:22:18 INFO  : Disconnected from the channel tcfchan#1.
+09:09:33 INFO  : Registering command handlers for SDK TCF services
+09:09:35 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab1\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+09:09:39 INFO  : XSCT server has started successfully.
+09:09:46 INFO  : Successfully done setting XSCT server connection channel  
+09:09:46 INFO  : Successfully done setting SDK workspace  
+09:09:46 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper.hdf.
+09:09:46 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+09:24:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:24:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+09:24:13 INFO  : 'jtag frequency' command is executed.
+09:24:13 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:24:15 INFO  : Context for 'APU' is selected.
+09:24:15 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:24:15 INFO  : 'configparams force-mem-access 1' command is executed.
+09:24:16 INFO  : Context for 'APU' is selected.
+09:24:16 INFO  : 'stop' command is executed.
+09:24:16 INFO  : 'ps7_init' command is executed.
+09:24:16 INFO  : 'ps7_post_config' command is executed.
+09:24:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:24:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:24:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:24:20 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:24:20 INFO  : 'configparams force-mem-access 0' command is executed.
+09:24:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:24:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:24:21 INFO  : 'con' command is executed.
+09:24:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+09:24:21 INFO  : Disconnected from the channel tcfchan#1.
+09:37:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:37:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+09:37:41 INFO  : 'jtag frequency' command is executed.
+09:37:41 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:37:43 INFO  : Context for 'APU' is selected.
+09:37:43 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:37:43 INFO  : 'configparams force-mem-access 1' command is executed.
+09:37:45 INFO  : Context for 'APU' is selected.
+09:37:45 INFO  : 'stop' command is executed.
+09:37:45 INFO  : 'ps7_init' command is executed.
+09:37:45 INFO  : 'ps7_post_config' command is executed.
+09:37:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:37:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:37:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:37:48 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:37:48 INFO  : 'configparams force-mem-access 0' command is executed.
+09:37:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:37:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:37:50 INFO  : 'con' command is executed.
+09:37:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+09:37:50 INFO  : Disconnected from the channel tcfchan#2.
+09:38:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:38:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+09:38:41 INFO  : 'jtag frequency' command is executed.
+09:38:41 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:38:41 INFO  : Context for 'APU' is selected.
+09:38:41 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:38:41 INFO  : 'configparams force-mem-access 1' command is executed.
+09:38:41 INFO  : Context for 'APU' is selected.
+09:38:41 INFO  : 'stop' command is executed.
+09:38:41 INFO  : 'ps7_init' command is executed.
+09:38:41 INFO  : 'ps7_post_config' command is executed.
+09:38:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:38:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:38:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:38:42 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:38:42 INFO  : 'configparams force-mem-access 0' command is executed.
+09:38:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:38:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:38:42 INFO  : 'con' command is executed.
+09:38:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+09:38:42 INFO  : Disconnected from the channel tcfchan#3.
+09:53:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:57 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+09:53:57 INFO  : 'jtag frequency' command is executed.
+09:53:57 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:53:57 INFO  : Context for 'APU' is selected.
+09:53:57 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:53:57 INFO  : 'configparams force-mem-access 1' command is executed.
+09:53:57 INFO  : Context for 'APU' is selected.
+09:53:57 INFO  : 'stop' command is executed.
+09:53:57 INFO  : 'ps7_init' command is executed.
+09:53:57 INFO  : 'ps7_post_config' command is executed.
+09:53:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:53:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:57 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:53:57 INFO  : 'configparams force-mem-access 0' command is executed.
+09:53:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:53:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:57 INFO  : 'con' command is executed.
+09:53:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+09:53:57 INFO  : Disconnected from the channel tcfchan#4.
+10:14:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:14:12 INFO  : 'jtag frequency' command is executed.
+10:14:12 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:14:12 INFO  : Context for 'APU' is selected.
+10:14:12 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:14:12 INFO  : 'configparams force-mem-access 1' command is executed.
+10:14:12 INFO  : Context for 'APU' is selected.
+10:14:12 INFO  : 'stop' command is executed.
+10:14:12 INFO  : 'ps7_init' command is executed.
+10:14:12 INFO  : 'ps7_post_config' command is executed.
+10:14:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:14:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:14:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:14:13 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:14:13 INFO  : 'configparams force-mem-access 0' command is executed.
+10:14:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:14:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:14:13 INFO  : 'con' command is executed.
+10:14:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+10:14:13 INFO  : Disconnected from the channel tcfchan#5.
+10:35:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:35:06 INFO  : 'jtag frequency' command is executed.
+10:35:06 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:35:06 INFO  : Context for 'APU' is selected.
+10:35:06 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:35:06 INFO  : 'configparams force-mem-access 1' command is executed.
+10:35:06 INFO  : Context for 'APU' is selected.
+10:35:06 INFO  : 'stop' command is executed.
+10:35:07 INFO  : 'ps7_init' command is executed.
+10:35:07 INFO  : 'ps7_post_config' command is executed.
+10:35:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:35:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:07 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:35:07 INFO  : 'configparams force-mem-access 0' command is executed.
+10:35:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:35:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:07 INFO  : 'con' command is executed.
+10:35:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+10:35:07 INFO  : Disconnected from the channel tcfchan#6.
+10:40:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:24 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:40:24 INFO  : 'jtag frequency' command is executed.
+10:40:24 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:40:25 INFO  : Context for 'APU' is selected.
+10:40:25 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:40:25 INFO  : 'configparams force-mem-access 1' command is executed.
+10:40:27 INFO  : Context for 'APU' is selected.
+10:40:27 INFO  : 'stop' command is executed.
+10:40:27 INFO  : 'ps7_init' command is executed.
+10:40:27 INFO  : 'ps7_post_config' command is executed.
+10:40:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:40:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:30 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:40:30 INFO  : 'configparams force-mem-access 0' command is executed.
+10:40:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:40:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:32 INFO  : 'con' command is executed.
+10:40:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+10:40:32 INFO  : Disconnected from the channel tcfchan#7.
+10:41:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:41:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:41:44 INFO  : 'jtag frequency' command is executed.
+10:41:44 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:41:46 INFO  : Context for 'APU' is selected.
+10:41:47 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:41:47 INFO  : 'configparams force-mem-access 1' command is executed.
+10:41:48 INFO  : Context for 'APU' is selected.
+10:41:48 INFO  : 'stop' command is executed.
+10:41:48 INFO  : 'ps7_init' command is executed.
+10:41:48 INFO  : 'ps7_post_config' command is executed.
+10:41:52 ERROR : no targets found with "name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"". available targets: none
+10:41:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+----------------End of Script----------------
+
+10:42:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:42:01 INFO  : 'jtag frequency' command is executed.
+10:42:01 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:42:03 INFO  : Context for 'APU' is selected.
+10:42:03 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:42:03 INFO  : 'configparams force-mem-access 1' command is executed.
+10:42:03 INFO  : Context for 'APU' is selected.
+10:42:03 INFO  : 'stop' command is executed.
+10:42:04 INFO  : 'ps7_init' command is executed.
+10:42:04 INFO  : 'ps7_post_config' command is executed.
+10:42:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:42:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:04 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:42:04 INFO  : 'configparams force-mem-access 0' command is executed.
+10:42:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:42:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:04 INFO  : 'con' command is executed.
+10:42:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+10:42:04 INFO  : Disconnected from the channel tcfchan#8.
+10:42:36 INFO  : Registering command handlers for SDK TCF services
+10:42:36 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab1\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+10:42:38 INFO  : XSCT server has started successfully.
+10:42:38 INFO  : Successfully done setting XSCT server connection channel  
+10:42:38 INFO  : Successfully done setting SDK workspace  
+10:42:38 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:42:39 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:43:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:43:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:43:13 INFO  : 'jtag frequency' command is executed.
+10:43:13 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:43:13 INFO  : Context for 'APU' is selected.
+10:43:13 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:43:13 INFO  : 'configparams force-mem-access 1' command is executed.
+10:43:13 INFO  : Context for 'APU' is selected.
+10:43:13 INFO  : 'stop' command is executed.
+10:43:14 INFO  : 'ps7_init' command is executed.
+10:43:14 INFO  : 'ps7_post_config' command is executed.
+10:43:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:43:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:14 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:43:14 INFO  : 'configparams force-mem-access 0' command is executed.
+10:43:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:43:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:14 INFO  : 'con' command is executed.
+10:43:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+10:43:14 INFO  : Disconnected from the channel tcfchan#1.
+10:43:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:43:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:43:38 INFO  : 'jtag frequency' command is executed.
+10:43:38 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:43:38 INFO  : Context for 'APU' is selected.
+10:43:39 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:43:39 INFO  : 'configparams force-mem-access 1' command is executed.
+10:43:39 INFO  : Context for 'APU' is selected.
+10:43:40 INFO  : 'stop' command is executed.
+10:43:40 INFO  : 'ps7_init' command is executed.
+10:43:40 INFO  : 'ps7_post_config' command is executed.
+10:43:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:43:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:40 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:43:40 INFO  : 'configparams force-mem-access 0' command is executed.
+10:43:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:43:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:40 INFO  : 'con' command is executed.
+10:43:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+10:43:40 INFO  : Disconnected from the channel tcfchan#2.
+10:45:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:45:16 INFO  : 'jtag frequency' command is executed.
+10:45:16 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:45:16 INFO  : Context for 'APU' is selected.
+10:45:16 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:45:16 INFO  : 'configparams force-mem-access 1' command is executed.
+10:45:16 INFO  : Context for 'APU' is selected.
+10:45:16 INFO  : 'stop' command is executed.
+10:45:16 INFO  : 'ps7_init' command is executed.
+10:45:16 INFO  : 'ps7_post_config' command is executed.
+10:45:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:45:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:16 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:45:16 INFO  : 'configparams force-mem-access 0' command is executed.
+10:45:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:45:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:16 INFO  : 'con' command is executed.
+10:45:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+10:45:16 INFO  : Disconnected from the channel tcfchan#3.
+10:46:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+10:46:45 INFO  : 'jtag frequency' command is executed.
+10:46:45 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:46:45 INFO  : Context for 'APU' is selected.
+10:46:45 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:46:45 INFO  : 'configparams force-mem-access 1' command is executed.
+10:46:45 INFO  : Context for 'APU' is selected.
+10:46:45 INFO  : 'stop' command is executed.
+10:46:45 INFO  : 'ps7_init' command is executed.
+10:46:45 INFO  : 'ps7_post_config' command is executed.
+10:46:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:46:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:46 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:46:46 INFO  : 'configparams force-mem-access 0' command is executed.
+10:46:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:46:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:46 INFO  : 'con' command is executed.
+10:46:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+10:46:46 INFO  : Disconnected from the channel tcfchan#4.
+11:00:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:00:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+11:00:50 INFO  : 'jtag frequency' command is executed.
+11:00:50 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:00:50 INFO  : Context for 'APU' is selected.
+11:00:50 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:00:50 INFO  : 'configparams force-mem-access 1' command is executed.
+11:00:50 INFO  : Context for 'APU' is selected.
+11:00:50 INFO  : 'stop' command is executed.
+11:00:50 INFO  : 'ps7_init' command is executed.
+11:00:50 INFO  : 'ps7_post_config' command is executed.
+11:00:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:00:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:00:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:00:51 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:00:51 INFO  : 'configparams force-mem-access 0' command is executed.
+11:00:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:00:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:00:51 INFO  : 'con' command is executed.
+11:00:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+11:00:51 INFO  : Disconnected from the channel tcfchan#5.
+11:09:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:09:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+11:09:49 INFO  : 'jtag frequency' command is executed.
+11:09:49 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:09:49 INFO  : Context for 'APU' is selected.
+11:09:49 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:09:49 INFO  : 'configparams force-mem-access 1' command is executed.
+11:09:49 INFO  : Context for 'APU' is selected.
+11:09:49 INFO  : 'stop' command is executed.
+11:09:49 INFO  : 'ps7_init' command is executed.
+11:09:49 INFO  : 'ps7_post_config' command is executed.
+11:09:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:09:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:09:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:09:49 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:09:49 INFO  : 'configparams force-mem-access 0' command is executed.
+11:09:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:09:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:09:50 INFO  : 'con' command is executed.
+11:09:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+11:09:50 INFO  : Disconnected from the channel tcfchan#6.
+11:12:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+11:12:48 INFO  : 'jtag frequency' command is executed.
+11:12:48 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:12:48 INFO  : Context for 'APU' is selected.
+11:12:48 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:12:48 INFO  : 'configparams force-mem-access 1' command is executed.
+11:12:48 INFO  : Context for 'APU' is selected.
+11:12:48 INFO  : 'stop' command is executed.
+11:12:48 INFO  : 'ps7_init' command is executed.
+11:12:48 INFO  : 'ps7_post_config' command is executed.
+11:12:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:12:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:49 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:12:49 INFO  : 'configparams force-mem-access 0' command is executed.
+11:12:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:12:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:49 INFO  : 'con' command is executed.
+11:12:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+11:12:49 INFO  : Disconnected from the channel tcfchan#7.
+11:26:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+11:26:07 INFO  : 'jtag frequency' command is executed.
+11:26:07 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:26:07 INFO  : Context for 'APU' is selected.
+11:26:07 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:26:07 INFO  : 'configparams force-mem-access 1' command is executed.
+11:26:07 INFO  : Context for 'APU' is selected.
+11:26:07 INFO  : 'stop' command is executed.
+11:26:07 INFO  : 'ps7_init' command is executed.
+11:26:07 INFO  : 'ps7_post_config' command is executed.
+11:26:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:26:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:07 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:26:07 INFO  : 'configparams force-mem-access 0' command is executed.
+11:26:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:26:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:07 INFO  : 'con' command is executed.
+11:26:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+11:26:07 INFO  : Disconnected from the channel tcfchan#8.
+11:37:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:43 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+11:37:43 INFO  : 'jtag frequency' command is executed.
+11:37:43 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:37:43 INFO  : Context for 'APU' is selected.
+11:37:43 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:37:43 INFO  : 'configparams force-mem-access 1' command is executed.
+11:37:43 INFO  : Context for 'APU' is selected.
+11:37:43 INFO  : 'stop' command is executed.
+11:37:44 INFO  : 'ps7_init' command is executed.
+11:37:44 INFO  : 'ps7_post_config' command is executed.
+11:37:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:37:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:44 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:37:44 INFO  : 'configparams force-mem-access 0' command is executed.
+11:37:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:37:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:44 INFO  : 'con' command is executed.
+11:37:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+11:37:44 INFO  : Disconnected from the channel tcfchan#9.
+11:43:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+11:43:07 INFO  : 'jtag frequency' command is executed.
+11:43:07 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:43:07 INFO  : Context for 'APU' is selected.
+11:43:07 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:43:07 INFO  : 'configparams force-mem-access 1' command is executed.
+11:43:07 INFO  : Context for 'APU' is selected.
+11:43:07 INFO  : 'stop' command is executed.
+11:43:07 INFO  : 'ps7_init' command is executed.
+11:43:07 INFO  : 'ps7_post_config' command is executed.
+11:43:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:43:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:07 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:07 INFO  : 'configparams force-mem-access 0' command is executed.
+11:43:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:43:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:07 INFO  : 'con' command is executed.
+11:43:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+11:43:07 INFO  : Disconnected from the channel tcfchan#10.
+14:42:11 INFO  : Registering command handlers for SDK TCF services
+14:42:13 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab1\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+14:42:16 INFO  : XSCT server has started successfully.
+14:42:24 INFO  : Successfully done setting XSCT server connection channel  
+14:42:24 INFO  : Successfully done setting SDK workspace  
+14:42:24 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper.hdf.
+14:42:24 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:31:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+16:31:35 INFO  : 'jtag frequency' command is executed.
+16:31:35 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:31:35 INFO  : Context for 'APU' is selected.
+16:31:35 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:31:35 INFO  : 'configparams force-mem-access 1' command is executed.
+16:31:35 INFO  : Context for 'APU' is selected.
+16:31:35 INFO  : 'stop' command is executed.
+16:31:35 INFO  : 'ps7_init' command is executed.
+16:31:35 INFO  : 'ps7_post_config' command is executed.
+16:31:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:31:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:35 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:31:36 INFO  : 'configparams force-mem-access 0' command is executed.
+16:31:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.sdk/mem_test/Debug/mem_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:31:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:36 INFO  : 'con' command is executed.
+16:31:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+16:31:36 INFO  : Disconnected from the channel tcfchan#1.
+02:24:06 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.sdk\temp_xsdb_launch_script.tcl
+02:24:08 INFO  : XSCT server has started successfully.
+02:24:08 INFO  : Successfully done setting XSCT server connection channel  
+02:24:09 INFO  : Successfully done setting SDK workspace  
+02:24:12 INFO  : Registering command handlers for SDK TCF services
+02:24:12 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf.
+02:27:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:27:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:27:46 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+02:28:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:28:07 INFO  : 'fpga -state' command is executed.
+02:28:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:28:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:28:07 INFO  : 'jtag frequency' command is executed.
+02:28:07 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:28:10 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"". available targets:
+  1  DAP (JTAG port open error. AP transaction error, DAP status 30000021)
+  2* xc7z010
+02:28:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+----------------End of Script----------------
+
+02:29:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:29:50 INFO  : 'fpga -state' command is executed.
+02:29:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:29:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:29:50 INFO  : 'jtag frequency' command is executed.
+02:29:50 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:29:53 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"". available targets:
+  1  DAP (JTAG port open error. AP transaction error, DAP status 30000021)
+  2* xc7z010
+02:29:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+----------------End of Script----------------
+
+02:31:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:31:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:31:19 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+02:31:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:31:28 INFO  : 'fpga -state' command is executed.
+02:31:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:31:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:31:28 INFO  : 'jtag frequency' command is executed.
+02:31:28 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:31:28 INFO  : Context for 'APU' is selected.
+02:31:29 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+02:31:29 INFO  : 'configparams force-mem-access 1' command is executed.
+02:31:29 INFO  : Context for 'APU' is selected.
+02:31:29 INFO  : 'stop' command is executed.
+02:31:29 INFO  : 'ps7_init' command is executed.
+02:31:29 INFO  : 'ps7_post_config' command is executed.
+02:31:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:31:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:31:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:31:29 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:31:29 INFO  : 'configparams force-mem-access 0' command is executed.
+02:31:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:31:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:31:29 INFO  : 'con' command is executed.
+02:31:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+02:31:29 INFO  : Disconnected from the channel tcfchan#1.
+02:32:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:32:10 INFO  : 'fpga -state' command is executed.
+02:32:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:32:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:32:10 INFO  : 'jtag frequency' command is executed.
+02:32:10 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:32:11 INFO  : Context for 'APU' is selected.
+02:32:11 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+02:32:11 INFO  : 'configparams force-mem-access 1' command is executed.
+02:32:13 INFO  : Context for 'APU' is selected.
+02:32:13 INFO  : 'stop' command is executed.
+02:32:13 INFO  : 'ps7_init' command is executed.
+02:32:13 INFO  : 'ps7_post_config' command is executed.
+02:32:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:32:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:32:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:32:16 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:32:16 INFO  : 'configparams force-mem-access 0' command is executed.
+02:32:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:32:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:32:18 INFO  : 'con' command is executed.
+02:32:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+02:32:18 INFO  : Disconnected from the channel tcfchan#2.
+02:33:07 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.sdk\temp_xsdb_launch_script.tcl
+02:33:09 INFO  : XSCT server has started successfully.
+02:33:09 INFO  : Successfully done setting XSCT server connection channel  
+02:33:10 INFO  : Successfully done setting SDK workspace  
+02:33:13 INFO  : Registering command handlers for SDK TCF services
+02:33:13 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf.
+02:33:13 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+02:34:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:34:09 INFO  : 'fpga -state' command is executed.
+02:34:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:34:09 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:34:09 INFO  : 'jtag frequency' command is executed.
+02:34:09 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:34:09 INFO  : Context for 'APU' is selected.
+02:34:09 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+02:34:09 INFO  : 'configparams force-mem-access 1' command is executed.
+02:34:09 INFO  : Context for 'APU' is selected.
+02:34:09 INFO  : 'stop' command is executed.
+02:34:10 INFO  : 'ps7_init' command is executed.
+02:34:10 INFO  : 'ps7_post_config' command is executed.
+02:34:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:34:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:34:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:34:10 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:34:10 INFO  : 'configparams force-mem-access 0' command is executed.
+02:34:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:34:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:34:10 INFO  : 'con' command is executed.
+02:34:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+02:34:10 INFO  : Disconnected from the channel tcfchan#1.
+02:37:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:37:26 INFO  : 'fpga -state' command is executed.
+02:37:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:37:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:37:26 INFO  : 'jtag frequency' command is executed.
+02:37:26 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:37:26 INFO  : Context for 'APU' is selected.
+02:37:26 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+02:37:26 INFO  : 'configparams force-mem-access 1' command is executed.
+02:37:26 INFO  : Context for 'APU' is selected.
+02:37:26 INFO  : 'stop' command is executed.
+02:37:26 INFO  : 'ps7_init' command is executed.
+02:37:26 INFO  : 'ps7_post_config' command is executed.
+02:37:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:37:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:37:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:37:26 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:37:26 INFO  : 'configparams force-mem-access 0' command is executed.
+02:37:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:37:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:37:27 INFO  : 'con' command is executed.
+02:37:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+02:37:27 INFO  : Disconnected from the channel tcfchan#2.
+02:50:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.sdk\temp_xsdb_launch_script.tcl
+02:50:20 INFO  : XSCT server has started successfully.
+02:50:20 INFO  : Successfully done setting XSCT server connection channel  
+02:50:20 INFO  : Successfully done setting SDK workspace  
+02:50:24 INFO  : Registering command handlers for SDK TCF services
+02:50:24 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf.
+02:50:24 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+02:50:24 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1613731774647,  Project:1613730207703
+02:50:24 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_1' is different from C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf.
+02:50:24 INFO  : Copied contents of C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_1\system.hdf.
+02:50:27 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:50:29 INFO  : 
+02:50:30 INFO  : Updating hardware inferred compiler options for TestApp.
+02:50:30 INFO  : Clearing existing target manager status.
+02:50:30 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+02:50:31 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:50:32 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+02:51:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:51:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:51:43 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+02:51:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:51:52 INFO  : 'fpga -state' command is executed.
+02:51:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:51:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:51:52 INFO  : 'jtag frequency' command is executed.
+02:51:52 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:51:52 INFO  : Context for 'APU' is selected.
+02:51:52 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+02:51:52 INFO  : 'configparams force-mem-access 1' command is executed.
+02:51:52 INFO  : Context for 'APU' is selected.
+02:51:53 INFO  : 'stop' command is executed.
+02:51:53 INFO  : 'ps7_init' command is executed.
+02:51:54 INFO  : 'ps7_post_config' command is executed.
+02:51:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:51:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:51:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:51:56 ERROR : Memory write error at 0x100000. AP transaction timeout
+02:51:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+----------------End of Script----------------
+
+02:52:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:52:37 INFO  : 'fpga -state' command is executed.
+02:52:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:52:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:52:37 INFO  : 'jtag frequency' command is executed.
+02:52:37 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:52:37 INFO  : Context for 'APU' is selected.
+02:52:37 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+02:52:37 INFO  : 'configparams force-mem-access 1' command is executed.
+02:52:37 INFO  : Context for 'APU' is selected.
+02:52:37 INFO  : 'stop' command is executed.
+02:52:37 ERROR : AP transaction error, DAP status f0000021
+02:52:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+02:55:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:55:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:55:07 ERROR : fpga configuration failed. DONE PIN is not HIGH
+02:56:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:56:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:56:08 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+02:56:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+02:56:40 INFO  : 'fpga -state' command is executed.
+02:56:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:56:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+02:56:40 INFO  : 'jtag frequency' command is executed.
+02:56:40 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+02:56:40 INFO  : Context for 'APU' is selected.
+02:56:40 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+02:56:40 INFO  : 'configparams force-mem-access 1' command is executed.
+02:56:40 INFO  : Context for 'APU' is selected.
+02:56:40 INFO  : 'stop' command is executed.
+02:56:41 INFO  : 'ps7_init' command is executed.
+02:56:41 INFO  : 'ps7_post_config' command is executed.
+02:56:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:56:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:56:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:56:44 ERROR : Memory write error at 0x100000. AP transaction timeout
+02:56:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+----------------End of Script----------------
+
+03:01:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:01:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+03:01:16 ERROR : fpga configuration failed. DONE PIN is not HIGH
+03:01:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:01:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+03:01:28 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+03:01:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+03:01:38 INFO  : 'fpga -state' command is executed.
+03:01:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:01:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+03:01:39 INFO  : 'jtag frequency' command is executed.
+03:01:39 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+03:01:42 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"". available targets:
+  1  DAP (JTAG port open error. AP transaction error, DAP status 30000021)
+  4* xc7z010
+03:01:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+----------------End of Script----------------
+
+03:01:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+03:01:57 INFO  : 'fpga -state' command is executed.
+03:01:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:01:57 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+03:01:57 INFO  : 'jtag frequency' command is executed.
+03:01:57 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+03:02:00 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"". available targets:
+  1  DAP (JTAG port open error. AP transaction error, DAP status 30000021)
+  4* xc7z010
+03:02:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+----------------End of Script----------------
+
+03:02:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+03:02:08 INFO  : 'fpga -state' command is executed.
+03:02:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:02:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+03:02:08 INFO  : 'jtag frequency' command is executed.
+03:02:08 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+03:02:11 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"". available targets:
+  1  DAP (JTAG port open error. AP transaction error, DAP status 30000021)
+  4* xc7z010
+03:02:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+----------------End of Script----------------
+
+04:20:46 INFO  : Registering command handlers for SDK TCF services
+04:20:46 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.sdk\temp_xsdb_launch_script.tcl
+04:20:49 INFO  : XSCT server has started successfully.
+04:20:49 INFO  : Successfully done setting XSCT server connection channel  
+04:20:49 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf.
+04:20:49 INFO  : Successfully done setting SDK workspace  
+04:20:49 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+04:20:51 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1613737127960,  Project:1613731774647
+04:20:51 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_1' is different from C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf.
+04:20:51 INFO  : Copied contents of C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_1\system.hdf.
+04:20:54 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+04:20:58 INFO  : 
+04:20:58 INFO  : Updating hardware inferred compiler options for TestApp.
+04:20:58 INFO  : Clearing existing target manager status.
+04:22:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:22:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+04:22:42 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+04:41:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+04:41:11 INFO  : 'fpga -state' command is executed.
+04:41:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:41:11 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+04:41:11 INFO  : 'jtag frequency' command is executed.
+04:41:11 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+04:41:11 INFO  : Context for 'APU' is selected.
+04:41:11 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+04:41:11 INFO  : 'configparams force-mem-access 1' command is executed.
+04:41:11 INFO  : Context for 'APU' is selected.
+04:41:11 INFO  : 'stop' command is executed.
+04:41:12 INFO  : 'ps7_init' command is executed.
+04:41:12 INFO  : 'ps7_post_config' command is executed.
+04:41:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:41:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:41:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:41:12 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:41:12 INFO  : 'configparams force-mem-access 0' command is executed.
+04:41:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:41:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:41:12 INFO  : 'con' command is executed.
+04:41:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+04:41:12 INFO  : Disconnected from the channel tcfchan#1.
+04:41:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:41:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+04:41:46 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+04:42:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+04:42:15 INFO  : 'fpga -state' command is executed.
+04:42:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:42:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+04:42:15 INFO  : 'jtag frequency' command is executed.
+04:42:15 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+04:42:15 INFO  : Context for 'APU' is selected.
+04:42:15 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+04:42:15 INFO  : 'configparams force-mem-access 1' command is executed.
+04:42:15 INFO  : Context for 'APU' is selected.
+04:42:15 INFO  : 'stop' command is executed.
+04:42:16 INFO  : 'ps7_init' command is executed.
+04:42:16 INFO  : 'ps7_post_config' command is executed.
+04:42:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:42:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:42:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:42:16 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:42:16 INFO  : 'configparams force-mem-access 0' command is executed.
+04:42:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:42:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:42:16 INFO  : 'con' command is executed.
+04:42:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+04:42:16 INFO  : Disconnected from the channel tcfchan#2.
+09:45:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:45:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+09:45:27 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+09:46:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+09:46:05 INFO  : 'fpga -state' command is executed.
+09:46:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:46:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+09:46:05 INFO  : 'jtag frequency' command is executed.
+09:46:05 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+09:46:05 INFO  : Context for 'APU' is selected.
+09:46:05 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+09:46:05 INFO  : 'configparams force-mem-access 1' command is executed.
+09:46:05 INFO  : Context for 'APU' is selected.
+09:46:05 INFO  : 'stop' command is executed.
+09:46:05 INFO  : 'ps7_init' command is executed.
+09:46:05 INFO  : 'ps7_post_config' command is executed.
+09:46:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:46:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:46:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:46:05 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:46:06 INFO  : 'configparams force-mem-access 0' command is executed.
+09:46:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:46:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:46:06 INFO  : 'con' command is executed.
+09:46:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+09:46:06 INFO  : Disconnected from the channel tcfchan#3.
+09:47:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+09:47:41 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+09:47:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+09:47:48 INFO  : 'fpga -state' command is executed.
+09:47:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+09:47:48 INFO  : 'jtag frequency' command is executed.
+09:47:48 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+09:47:48 INFO  : Context for 'APU' is selected.
+09:47:48 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+09:47:48 INFO  : 'configparams force-mem-access 1' command is executed.
+09:47:48 INFO  : Context for 'APU' is selected.
+09:47:49 INFO  : 'stop' command is executed.
+09:47:49 INFO  : 'ps7_init' command is executed.
+09:47:49 INFO  : 'ps7_post_config' command is executed.
+09:47:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:47:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:47:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:47:49 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:47:49 INFO  : 'configparams force-mem-access 0' command is executed.
+09:47:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:47:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:47:49 INFO  : 'con' command is executed.
+09:47:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+09:47:49 INFO  : Disconnected from the channel tcfchan#4.
+09:48:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+09:48:13 INFO  : 'fpga -state' command is executed.
+09:48:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:48:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+09:48:13 INFO  : 'jtag frequency' command is executed.
+09:48:13 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+09:48:15 INFO  : Context for 'APU' is selected.
+09:48:15 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+09:48:15 INFO  : 'configparams force-mem-access 1' command is executed.
+09:48:16 INFO  : Context for 'APU' is selected.
+09:48:16 INFO  : 'stop' command is executed.
+09:48:16 INFO  : 'ps7_init' command is executed.
+09:48:16 INFO  : 'ps7_post_config' command is executed.
+09:48:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:48:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:48:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:48:20 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:48:20 INFO  : 'configparams force-mem-access 0' command is executed.
+09:48:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:48:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:48:20 INFO  : 'con' command is executed.
+09:48:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+09:48:20 INFO  : Disconnected from the channel tcfchan#5.
+09:48:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:48:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+09:48:58 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+11:53:30 INFO  : Registering command handlers for SDK TCF services
+11:53:31 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.sdk\temp_xsdb_launch_script.tcl
+11:53:34 INFO  : XSCT server has started successfully.
+13:31:18 INFO  : Registering command handlers for SDK TCF services
+13:31:20 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.sdk\temp_xsdb_launch_script.tcl
+13:31:24 INFO  : XSCT server has started successfully.
+13:31:32 INFO  : Successfully done setting XSCT server connection channel  
+13:31:32 INFO  : Successfully done setting SDK workspace  
+13:31:32 INFO  : Processing command line option -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf.
+13:31:43 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+13:31:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:32:01 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+13:32:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:32:11 INFO  : 'fpga -state' command is executed.
+13:32:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:11 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+13:32:11 INFO  : 'jtag frequency' command is executed.
+13:32:11 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+13:32:11 INFO  : Context for 'APU' is selected.
+13:32:11 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+13:32:12 INFO  : 'configparams force-mem-access 1' command is executed.
+13:32:12 INFO  : Context for 'APU' is selected.
+13:32:12 INFO  : 'stop' command is executed.
+13:32:13 INFO  : 'ps7_init' command is executed.
+13:32:13 INFO  : 'ps7_post_config' command is executed.
+13:32:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:32:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:32:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:32:15 ERROR : Memory write error at 0x100000. AP transaction timeout
+13:32:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+----------------End of Script----------------
+
+13:32:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:32:40 INFO  : 'fpga -state' command is executed.
+13:32:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+13:32:41 INFO  : 'jtag frequency' command is executed.
+13:32:41 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+13:32:41 INFO  : Context for 'APU' is selected.
+13:32:41 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+13:32:41 INFO  : 'configparams force-mem-access 1' command is executed.
+13:32:41 INFO  : Context for 'APU' is selected.
+13:32:41 INFO  : 'stop' command is executed.
+13:32:41 ERROR : AP transaction error, DAP status f0000021
+13:32:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+13:32:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:32:48 ERROR : fpga configuration failed. DONE PIN is not HIGH
+13:33:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:33:14 INFO  : 'fpga -state' command is executed.
+13:33:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:33:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+13:33:14 INFO  : 'jtag frequency' command is executed.
+13:33:14 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+13:33:16 INFO  : Context for 'APU' is selected.
+13:33:16 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+13:33:16 INFO  : 'configparams force-mem-access 1' command is executed.
+13:33:16 INFO  : Context for 'APU' is selected.
+13:33:16 INFO  : 'stop' command is executed.
+13:33:16 ERROR : Memory read error at 0xF8000128. Cannot flush JTAG server queue. FT_Write failed: io error
+13:33:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+13:33:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:33:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:33:39 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+13:34:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:34:10 INFO  : 'fpga -state' command is executed.
+13:34:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:34:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+13:34:10 INFO  : 'jtag frequency' command is executed.
+13:34:10 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+13:34:10 INFO  : Context for 'APU' is selected.
+13:34:10 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+13:34:10 INFO  : 'configparams force-mem-access 1' command is executed.
+13:34:10 INFO  : Context for 'APU' is selected.
+13:34:10 INFO  : 'stop' command is executed.
+13:34:10 INFO  : 'ps7_init' command is executed.
+13:34:10 INFO  : 'ps7_post_config' command is executed.
+13:34:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:34:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:34:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:34:10 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:34:10 INFO  : 'configparams force-mem-access 0' command is executed.
+13:34:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:34:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:34:11 INFO  : 'con' command is executed.
+13:34:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+13:34:11 INFO  : Disconnected from the channel tcfchan#1.
+13:39:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:39:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:39:07 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+13:39:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:39:14 INFO  : 'fpga -state' command is executed.
+13:39:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:39:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+13:39:15 INFO  : 'jtag frequency' command is executed.
+13:39:15 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+13:39:15 INFO  : Context for 'APU' is selected.
+13:39:15 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+13:39:15 INFO  : 'configparams force-mem-access 1' command is executed.
+13:39:15 INFO  : Context for 'APU' is selected.
+13:39:15 INFO  : 'stop' command is executed.
+13:39:15 INFO  : 'ps7_init' command is executed.
+13:39:15 INFO  : 'ps7_post_config' command is executed.
+13:39:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:39:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:39:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:39:15 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:39:15 INFO  : 'configparams force-mem-access 0' command is executed.
+13:39:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:39:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:39:15 INFO  : 'con' command is executed.
+13:39:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+13:39:15 INFO  : Disconnected from the channel tcfchan#2.
+13:40:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:40:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:40:48 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+13:41:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:41:02 INFO  : 'fpga -state' command is executed.
+13:41:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:41:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+13:41:02 INFO  : 'jtag frequency' command is executed.
+13:41:02 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+13:41:02 INFO  : Context for 'APU' is selected.
+13:41:02 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+13:41:02 INFO  : 'configparams force-mem-access 1' command is executed.
+13:41:02 INFO  : Context for 'APU' is selected.
+13:41:02 INFO  : 'stop' command is executed.
+13:41:02 INFO  : 'ps7_init' command is executed.
+13:41:02 INFO  : 'ps7_post_config' command is executed.
+13:41:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:41:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:41:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:41:03 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:41:03 INFO  : 'configparams force-mem-access 0' command is executed.
+13:41:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:41:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:41:03 INFO  : 'con' command is executed.
+13:41:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+13:41:03 INFO  : Disconnected from the channel tcfchan#3.
+13:43:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:43:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:43:55 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+13:44:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:44:02 INFO  : 'fpga -state' command is executed.
+13:44:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:44:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+13:44:02 INFO  : 'jtag frequency' command is executed.
+13:44:02 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+13:44:02 INFO  : Context for 'APU' is selected.
+13:44:02 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+13:44:02 INFO  : 'configparams force-mem-access 1' command is executed.
+13:44:02 INFO  : Context for 'APU' is selected.
+13:44:02 INFO  : 'stop' command is executed.
+13:44:03 INFO  : 'ps7_init' command is executed.
+13:44:03 INFO  : 'ps7_post_config' command is executed.
+13:44:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:44:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:44:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:44:03 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:44:03 INFO  : 'configparams force-mem-access 0' command is executed.
+13:44:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:44:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:44:03 INFO  : 'con' command is executed.
+13:44:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+13:44:03 INFO  : Disconnected from the channel tcfchan#4.
+13:46:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:46:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:46:44 INFO  : FPGA configured successfully with bitstream "C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+13:46:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA" && level==0} -index 1' command is executed.
+13:46:51 INFO  : 'fpga -state' command is executed.
+13:46:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:46:51 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB734BA' is selected.
+13:46:51 INFO  : 'jtag frequency' command is executed.
+13:46:51 INFO  : Sourcing of 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+13:46:51 INFO  : Context for 'APU' is selected.
+13:46:51 INFO  : Hardware design information is loaded from 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf'.
+13:46:51 INFO  : 'configparams force-mem-access 1' command is executed.
+13:46:51 INFO  : Context for 'APU' is selected.
+13:46:51 INFO  : 'stop' command is executed.
+13:46:51 INFO  : 'ps7_init' command is executed.
+13:46:51 INFO  : 'ps7_post_config' command is executed.
+13:46:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:46:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:46:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:46:52 INFO  : The application 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:46:52 INFO  : 'configparams force-mem-access 0' command is executed.
+13:46:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+loadhw -hw C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+dow C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/TestApp/Debug/TestApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:46:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:46:52 INFO  : 'con' command is executed.
+13:46:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB734BA"} -index 0
+con
+----------------End of Script----------------
+
+13:46:52 INFO  : Disconnected from the channel tcfchan#5.

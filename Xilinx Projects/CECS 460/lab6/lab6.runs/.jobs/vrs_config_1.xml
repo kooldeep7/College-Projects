@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="DeterminantMicroBlaze_axi_uartlite_0_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_microblaze_0_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_dlmb_v10_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_3_3_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_3_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_rst_clk_wiz_0_100M_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_rst_clk_wiz_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_2_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_3_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_3_1_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_3_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_3_5_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_3_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_mdm_1_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_ilmb_v10_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_util_vector_logic_0_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_0_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_3_2_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_3_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_3_6_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_3_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_lmb_bram_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_xbar_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DeterminantMicroBlaze_axi_gpio_3_4_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_axi_gpio_3_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="DeterminantMicroBlaze_DeterminantTopModule_0_0_synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/DeterminantMicroBlaze_DeterminantTopModule_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="DeterminantMicroBlaze_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_microblaze_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_dlmb_v10_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_3_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_rst_clk_wiz_0_100M_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_2_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_1_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_5_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_mdm_1_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_ilmb_v10_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_clk_wiz_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_2_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_6_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_lmb_bram_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_xbar_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_4_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_DeterminantTopModule_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/KuldeepGohil/Desktop/Spring2021/CECS 460/labs/VivadoProjects/lab6/lab6.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_1_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_microblaze_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_dlmb_v10_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_3_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_rst_clk_wiz_0_100M_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_2_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_1_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_5_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_mdm_1_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_ilmb_v10_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_clk_wiz_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_0_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_2_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_6_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_lmb_bram_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_xbar_0_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_axi_gpio_3_4_synth_1"/>
+		<Parent Id="DeterminantMicroBlaze_DeterminantTopModule_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

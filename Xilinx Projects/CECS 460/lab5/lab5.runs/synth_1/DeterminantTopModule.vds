@@ -1,0 +1,507 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 23 11:27:20 2021
+# Process ID: 10848
+# Current directory: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.runs/synth_1
+# Command line: vivado.exe -log DeterminantTopModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DeterminantTopModule.tcl
+# Log file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.runs/synth_1/DeterminantTopModule.vds
+# Journal file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DeterminantTopModule.tcl -notrace
+Command: synth_design -top DeterminantTopModule -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14216 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 437.957 ; gain = 98.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DeterminantTopModule' [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/DeterminantTopModule.v:9]
+INFO: [Synth 8-6157] synthesizing module 'GenerateMatrices' [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:9]
+WARNING: [Synth 8-5856] 3D RAM A_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM B_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM C_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM D_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'GenerateMatrices' (1#1) [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CalcDeterminant' [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/CalcDeterminant.v:24]
+WARNING: [Synth 8-5788] Register X_reg in module CalcDeterminant is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/CalcDeterminant.v:39]
+WARNING: [Synth 8-5788] Register Y_reg in module CalcDeterminant is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/CalcDeterminant.v:40]
+WARNING: [Synth 8-5788] Register Z_reg in module CalcDeterminant is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/CalcDeterminant.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'CalcDeterminant' (2#1) [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/CalcDeterminant.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'DeterminantTopModule' (3#1) [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/DeterminantTopModule.v:9]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 493.672 ; gain = 154.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 493.672 ; gain = 154.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 493.672 ; gain = 154.180
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/constrs_1/imports/lab-6/Nexys4ddrMaster.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DeterminantTopModule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DeterminantTopModule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 837.891 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 837.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 837.891 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 837.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 837.891 ; gain = 498.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 837.891 ; gain = 498.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 837.891 ; gain = 498.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 837.891 ; gain = 498.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                5 Bit    Registers := 36    
++---Muxes : 
+	   4 Input     45 Bit        Muxes := 1     
+	   2 Input     45 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module GenerateMatrices 
+Detailed RTL Component Info : 
++---Registers : 
+	               45 Bit    Registers := 1     
+	                5 Bit    Registers := 36    
++---Muxes : 
+	   4 Input     45 Bit        Muxes := 1     
+	   2 Input     45 Bit        Muxes := 1     
+Module CalcDeterminant 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP one/Y0, operation Mode is: A*B.
+DSP Report: operator one/Y0 is absorbed into DSP one/Y0.
+DSP Report: Generating DSP one/Z0, operation Mode is: A*B.
+DSP Report: operator one/Z0 is absorbed into DSP one/Z0.
+DSP Report: Generating DSP one/X0, operation Mode is: A*B.
+DSP Report: operator one/X0 is absorbed into DSP one/X0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][0][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/B_reg[0][0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[0][0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[0][0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[0][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[0][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[0][0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[0][0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[0][0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[0][0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][0][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[0][0][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/D_reg[0][0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[2][1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[2][1][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[2][1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[2][1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[2][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[2][1][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[2][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[2][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[2][1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[2][1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[2][1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/D_reg[2][1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[2][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[2][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[2][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[2][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[2][1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[2][1][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[2][1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[2][1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[1][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[1][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[1][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[1][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[1][1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[1][1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[1][1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[1][1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[1][1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[1][1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[1][1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[1][1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[1][1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/B_reg[1][1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[1][1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[1][1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[1][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[1][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[1][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[1][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[0][2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/D_reg[0][2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][2][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[0][2][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/D_reg[0][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][2][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[0][2][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/D_reg[0][2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[0][2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[0][2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[0][2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[0][2][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[0][2][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/D_reg[0][2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[2][2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[2][2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[2][2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[2][2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[2][2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[2][2][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/C_reg[2][2][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/D_reg[2][2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[1][0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[1][0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[1][0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[1][0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[1][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/B_reg[1][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[1][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[1][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/A_reg[2][2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zero/B_reg[2][2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/C_reg[2][2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zero/D_reg[2][2][0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[40]' (FDC) to 'zero/OutMatrix_reg[20]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[44]' (FDC) to 'zero/OutMatrix_reg[5]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[8]' (FDC) to 'zero/OutMatrix_reg[7]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[5]' (FDC) to 'zero/OutMatrix_reg[30]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[7]' (FDC) to 'zero/OutMatrix_reg[9]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[20]' (FDC) to 'zero/OutMatrix_reg[0]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[30]' (FDC) to 'zero/OutMatrix_reg[31]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[31]' (FDC) to 'zero/OutMatrix_reg[32]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[32]' (FDC) to 'zero/OutMatrix_reg[34]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[34]' (FDC) to 'zero/OutMatrix_reg[27]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[27]' (FDC) to 'zero/OutMatrix_reg[1]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[1]' (FDC) to 'zero/OutMatrix_reg[29]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[29]' (FDC) to 'zero/OutMatrix_reg[4]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[4]' (FDC) to 'zero/OutMatrix_reg[19]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[19]' (FDC) to 'zero/OutMatrix_reg[13]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[13]' (FDC) to 'zero/OutMatrix_reg[12]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[12]' (FDC) to 'zero/OutMatrix_reg[17]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[17]' (FDC) to 'zero/OutMatrix_reg[35]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[35]' (FDC) to 'zero/OutMatrix_reg[37]'
+INFO: [Synth 8-3886] merging instance 'zero/OutMatrix_reg[37]' (FDC) to 'zero/OutMatrix_reg[39]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 837.891 ; gain = 498.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|CalcDeterminant | A*B         | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CalcDeterminant | A*B         | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CalcDeterminant | A*B         | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:77]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 872.012 ; gain = 532.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 872.234 ; gain = 532.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.srcs/sources_1/imports/src/GenerateMatrices.v:77]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 881.898 ; gain = 542.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.898 ; gain = 542.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.898 ; gain = 542.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.898 ; gain = 542.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.898 ; gain = 542.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.898 ; gain = 542.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.898 ; gain = 542.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    16|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |    10|
+|5     |LUT2    |    20|
+|6     |LUT3    |    27|
+|7     |LUT4    |    14|
+|8     |LUT5    |     3|
+|9     |LUT6    |     1|
+|10    |FDCE    |    19|
+|11    |IBUF    |     5|
+|12    |OBUF    |    16|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |   135|
+|2     |  one    |CalcDeterminant  |    64|
+|3     |  zero   |GenerateMatrices |    49|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.898 ; gain = 542.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 881.898 ; gain = 198.188
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 881.898 ; gain = 542.406
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 881.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+147 Infos, 23 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 881.898 ; gain = 555.539
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 881.898 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab5/lab5.runs/synth_1/DeterminantTopModule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DeterminantTopModule_utilization_synth.rpt -pb DeterminantTopModule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 23 11:27:46 2021...

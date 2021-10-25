@@ -1,0 +1,3 @@
+verilog work "Encoder.v"
+verilog work "Decoder.v"
+verilog work "EncDec.v"

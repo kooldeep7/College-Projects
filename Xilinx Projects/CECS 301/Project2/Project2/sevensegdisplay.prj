@@ -1,0 +1,7 @@
+verilog work "rotator.v"
+verilog work "mux8to1.v"
+verilog work "mod8.v"
+verilog work "hextosseg.v"
+verilog work "counter32.v"
+verilog work "barrelshifter.v"
+verilog work "sevensegdisplay.v"

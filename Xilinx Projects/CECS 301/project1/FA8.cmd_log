@@ -1,0 +1,32 @@
+xst -intstyle ise -ifn "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/project1/FA8.xst" -ofn "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/project1/FA8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Project1.ucf -p xc7a100t-csg324-3 "FA8.ngc" FA8.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FA8_map.ncd FA8.ngd FA8.pcf 
+par -w -intstyle ise -ol high -mt off FA8_map.ncd FA8.ncd FA8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FA8.twx FA8.ncd -o FA8.twr FA8.pcf -ucf Project1.ucf 
+bitgen -intstyle ise -f FA8.ut FA8.ncd 
+xst -intstyle ise -ifn "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/project1/FA8.xst" -ofn "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/project1/FA8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Project1.ucf -p xc7a100t-csg324-3 "FA8.ngc" FA8.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FA8_map.ncd FA8.ngd FA8.pcf 
+par -w -intstyle ise -ol high -mt off FA8_map.ncd FA8.ncd FA8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FA8.twx FA8.ncd -o FA8.twr FA8.pcf -ucf Project1.ucf 
+bitgen -intstyle ise -f FA8.ut FA8.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Project1.ucf -p xc7a100t-csg324-3 "FA8.ngc" FA8.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FA8_map.ncd FA8.ngd FA8.pcf 
+par -w -intstyle ise -ol high -mt off FA8_map.ncd FA8.ncd FA8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FA8.twx FA8.ncd -o FA8.twr FA8.pcf -ucf Project1.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Project1.ucf -p xc7a100t-csg324-3 "FA8.ngc" FA8.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FA8_map.ncd FA8.ngd FA8.pcf 
+par -w -intstyle ise -ol high -mt off FA8_map.ncd FA8.ncd FA8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FA8.twx FA8.ncd -o FA8.twr FA8.pcf -ucf Project1.ucf 
+bitgen -intstyle ise -f FA8.ut FA8.ncd 
+xst -intstyle ise -ifn "C:/Users/Kuldeep/Desktop/CECS CLASSES/301 Stuff/CECS 301 2019/project1/FA8.xst" -ofn "C:/Users/Kuldeep/Desktop/CECS CLASSES/301 Stuff/CECS 301 2019/project1/FA8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Project1.ucf -p xc7a100t-csg324-3 "FA8.ngc" FA8.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FA8_map.ncd FA8.ngd FA8.pcf 
+par -w -intstyle ise -ol high -mt off FA8_map.ncd FA8.ncd FA8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FA8.twx FA8.ncd -o FA8.twr FA8.pcf -ucf Project1.ucf 
+xst -intstyle ise -ifn "C:/Users/Kuldeep/Desktop/CECS CLASSES/301 Stuff/CECS 301 2019/project1/FA8.xst" -ofn "C:/Users/Kuldeep/Desktop/CECS CLASSES/301 Stuff/CECS 301 2019/project1/FA8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Project1.ucf -p xc7a100t-csg324-3 "FA8.ngc" FA8.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FA8_map.ncd FA8.ngd FA8.pcf 
+par -w -intstyle ise -ol high -mt off FA8_map.ncd FA8.ncd FA8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FA8.twx FA8.ncd -o FA8.twr FA8.pcf -ucf Project1.ucf 
+bitgen -intstyle ise -f FA8.ut FA8.ncd 

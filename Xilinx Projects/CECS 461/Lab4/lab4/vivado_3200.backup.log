@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 19 11:15:44 2021
+# Process ID: 3200
+# Current directory: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab4/lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10464 C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab4\lab4\lab4.xpr
+# Log file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab4/lab4/vivado.log
+# Journal file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab4/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab4/lab4/lab4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/led_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'S:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 793.887 ; gain = 154.035
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab4/lab4/lab4.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab4/lab4/lab4.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab4/lab4/lab4.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab4/lab4/lab4.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 19 11:20:41 2021...

@@ -1,0 +1,4 @@
+verilog work "Pulseit.v"
+verilog work "machine.v"
+verilog work "topLevel.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

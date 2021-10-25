@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kuldeep\Desktop\Lab 6\Lab6\counter32.ncd
+OUTFILE=C:\Users\Kuldeep\Desktop\Lab 6\Lab6\counter32.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Kuldeep\Desktop\Lab 6\Lab6
+LICENSE=WebPack
+USER_INFO=211302699_0_0_854

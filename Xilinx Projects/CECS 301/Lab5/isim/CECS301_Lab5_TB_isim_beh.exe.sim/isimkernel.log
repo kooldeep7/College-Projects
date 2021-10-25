@@ -1,0 +1,29 @@
+Command line:
+   CECS301_Lab5_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51722
+
+Tue Oct 02 05:20:00 2018
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5174.72 Meg
+
+ Total Signals          : 97
+ Total Nets             : 99
+ Total Signal Drivers   : 33
+ Total Blocks           : 16
+ Total Primitive Blocks : 14
+ Total Processes        : 47
+ Total Traceable Variables  : 38
+ Total Scalar Nets and Variables : 423
+Total Line Count : 152
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5174.72 Meg
+
+Tue Oct 02 05:20:17 2018
+

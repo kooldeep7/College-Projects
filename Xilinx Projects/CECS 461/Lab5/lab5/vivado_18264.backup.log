@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 30 09:04:18 2021
+# Process ID: 18264
+# Current directory: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab5/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3848 C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab5\lab5\lab5.xpr
+# Log file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab5/lab5/vivado.log
+# Journal file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab5/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab5/lab5/lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/led_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'S:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 777.043 ; gain = 161.598
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 30 11:20:21 2021...

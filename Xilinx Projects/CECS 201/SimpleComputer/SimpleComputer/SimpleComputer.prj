@@ -1,0 +1,3 @@
+verilog work "../../../Downloads/sp_dp.v"
+verilog work "../../../Downloads/sp_ct.v"
+verilog work "../../../Downloads/SimpleComputer.v"

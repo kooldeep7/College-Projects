@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kuldeep\Desktop\Lab 3\LAB3\EncDec.ncd
+OUTFILE=C:\Users\Kuldeep\Desktop\Lab 3\LAB3\EncDec.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Users\Kuldeep\Desktop\Lab 3\LAB3
+LICENSE=WebPack
+USER_INFO=211302699_0_0_854

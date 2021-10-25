@@ -1,0 +1,520 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 19 01:53:50 2021
+# Process ID: 19292
+# Current directory: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16876 C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab1\project_1\project_1.xpr
+# Log file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/vivado.log
+# Journal file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab1/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/KuldeepGohil/Desktop/Spring 2021/CECS 461/Labs/Lab1/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'S:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 801.492 ; gain = 171.621
+update_compile_order -fileset sources_1
+save_project_as lab2 C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2 -force
+save_project_as: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 833.703 ; gain = 0.000
+open_bd_design {C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <design_1> from BD file <C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 935.566 ; gain = 101.863
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_RST0_PORT {1}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+set_property location {392 29} [get_bd_intf_ports DDR]
+set_property location {384 50} [get_bd_intf_ports FIXED_IO]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name switches [get_bd_cells axi_gpio_0]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {4} CONFIG.C_ALL_INPUTS {1} CONFIG.GPIO_BOARD_INTERFACE {sws_4bits}] [get_bd_cells switches]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/switches/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins switches/S_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</switches/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sws_4bits ( 4 Switches ) } Manual_Source {Auto}}  [get_bd_intf_pins switches/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /switches]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE sws_4bits [get_bd_cells /switches]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 sws_4bits
+INFO: [board_rule 100-100] connect_bd_intf_net /sws_4bits /switches/GPIO
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name buttons [get_bd_cells axi_gpio_0]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {4} CONFIG.C_ALL_INPUTS {1} CONFIG.GPIO_BOARD_INTERFACE {btns_4bits}] [get_bd_cells buttons]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins buttons/S_AXI] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
+connect_bd_net [get_bd_pins buttons/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins buttons/s_axi_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+set_property location {4 1165 167} [get_bd_cells switches]
+set_property location {3 926 46} [get_bd_cells ps7_0_axi_periph]
+set_property location {2 503 172} [get_bd_cells rst_ps7_0_100M]
+set_property location {2 480 -177} [get_bd_cells processing_system7_0]
+set_property location {4 1243 -28} [get_bd_cells buttons]
+set_property location {3 1245 -81} [get_bd_cells switches]
+set_property location {3 1250 122} [get_bd_cells buttons]
+set_property location {3 1242 170} [get_bd_cells buttons]
+set_property location {3 1232 70} [get_bd_cells switches]
+set_property location {3 1252 51} [get_bd_cells switches]
+set_property location {3 1250 69} [get_bd_cells switches]
+set_property location {3 1251 59} [get_bd_cells switches]
+set_property location {3 1249 234} [get_bd_cells buttons]
+set_property location {1452 -224} [get_bd_intf_ports DDR]
+set_property location {1453 -205} [get_bd_intf_ports FIXED_IO]
+set_property location {1457 58} [get_bd_intf_ports sws_4bits]
+assign_bd_address
+</buttons/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000 [ 64K ]>
+set_property name switches [get_bd_addr_segs {processing_system7_0/Data/SEG_switches_Reg}]
+undo
+INFO: [Common 17-17] undo 'set_property name switches [get_bd_addr_segs {processing_system7_0/Data/SEG_switches_Reg}]'
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins buttons/GPIO]
+endgroup
+set_property NAME switches [get_bd_intf_pins /buttons/GPIO]
+WARNING: [BD 41-1642] Cannot set the parameter 'NAME' on '/buttons/GPIO' - Parameter does not exist. 
+undo
+INFO: [Common 17-17] undo 'set_property NAME switches [get_bd_intf_pins /buttons/GPIO]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_intf_pins buttons/GPIO]'
+INFO: [Common 17-17] undo 'startgroup'
+set_property NAME switches [get_bd_intf_pins /switches/GPIO]
+WARNING: [BD 41-1642] Cannot set the parameter 'NAME' on '/switches/GPIO' - Parameter does not exist. 
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_4bits ( 4 Buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins buttons/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /buttons]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_4bits [get_bd_cells /buttons]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_4bits
+INFO: [board_rule 100-100] connect_bd_intf_net /btns_4bits /buttons/GPIO
+save_bd_design
+Wrote  : <C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs synth_1 -jobs 2
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+Wrote  : <C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switches .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block buttons .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Feb 19 02:12:51 2021] Launched design_1_processing_system7_0_0_synth_1, design_1_axi_gpio_0_0_synth_1, design_1_axi_gpio_0_1_synth_1, design_1_rst_ps7_0_100M_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_pc_0_synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_axi_gpio_0_0_synth_1: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/design_1_axi_gpio_0_0_synth_1/runme.log
+design_1_axi_gpio_0_1_synth_1: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/design_1_axi_gpio_0_1_synth_1/runme.log
+design_1_rst_ps7_0_100M_0_synth_1: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/design_1_rst_ps7_0_100M_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/design_1_auto_pc_0_synth_1/runme.log
+[Fri Feb 19 02:12:51 2021] Launched synth_1...
+Run output will be captured here: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1201.777 ; gain = 144.246
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp' for cell 'design_1_i/buttons'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/switches'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/switches/U0'
+Finished Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/switches/U0'
+Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/switches/U0'
+Finished Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/switches/U0'
+Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/buttons/U0'
+Finished Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/buttons/U0'
+Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/buttons/U0'
+Finished Parsing XDC File [c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/buttons/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1497.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1633.129 ; gain = 394.590
+set_property is_loc_fixed false [get_ports [list  {btns_4bits_tri_i[2]}]]
+set_property is_loc_fixed true [get_ports [list  {btns_4bits_tri_i[2]}]]
+set_property is_loc_fixed false [get_ports [list  {btns_4bits_tri_i[2]}]]
+set_property is_loc_fixed true [get_ports [list  {btns_4bits_tri_i[2]}]]
+place_ports {btns_4bits_tri_i[2]} V16
+place_ports {btns_4bits_tri_i[0]} R18
+file mkdir C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/constrs_1/new
+close [ open C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/constrs_1/new/lab2.xdc w ]
+add_files -fileset constrs_1 C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/constrs_1/new/lab2.xdc
+set_property target_constrs_file C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/constrs_1/new/lab2.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2610.504 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Feb 19 02:18:57 2021] Launched synth_1...
+Run output will be captured here: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/synth_1/runme.log
+[Fri Feb 19 02:18:57 2021] Launched impl_1...
+Run output will be captured here: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/impl_1/runme.log
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Feb 19 02:19:16 2021] Launched synth_1...
+Run output will be captured here: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/synth_1/runme.log
+[Fri Feb 19 02:19:16 2021] Launched impl_1...
+Run output will be captured here: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.344 . Memory (MB): peak = 2618.656 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.345 . Memory (MB): peak = 2618.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2618.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_report' was cancelled
+file copy -force C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/impl_1/design_1_wrapper.sysdef C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins buttons/gpio_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /buttons/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+endgroup
+set_property NAME sdsad [get_bd_ports /gpio_io_i_0]
+undo
+INFO: [Common 17-17] undo 'set_property NAME sdsad [get_bd_ports /gpio_io_i_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_pins buttons/gpio_io_i]'
+INFO: [Common 17-17] undo 'startgroup'
+save_bd_design
+Wrote  : <C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+Wrote  : <C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switches .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block buttons .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = a55a396f04eaec77; cache size = 2.777 MB.
+[Fri Feb 19 02:45:25 2021] Launched synth_1...
+Run output will be captured here: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/synth_1/runme.log
+[Fri Feb 19 02:45:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2618.656 ; gain = 0.000
+file copy -force C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.runs/impl_1/design_1_wrapper.sysdef C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.318 . Memory (MB): peak = 2618.656 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.318 . Memory (MB): peak = 2618.656 ; gain = 0.000
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 19 03:01:01 2021...

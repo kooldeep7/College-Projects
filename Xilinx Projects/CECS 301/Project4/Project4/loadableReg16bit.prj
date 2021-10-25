@@ -1,0 +1,4 @@
+verilog work "shiftReg.v"
+verilog work "pulseGen.v"
+verilog work "detectPosEdge.v"
+verilog work "topModule.v"

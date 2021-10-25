@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kuldeep\Desktop\CECS CLASSES\301 Stuff\CECS 301 2019\project1\FA8.ncd
+OUTFILE=C:\Users\Kuldeep\Desktop\CECS CLASSES\301 Stuff\CECS 301 2019\project1\FA8.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\Kuldeep\Desktop\CECS CLASSES\301 Stuff\CECS 301 2019\project1
+LICENSE=WebPack
+USER_INFO=211302699_0_0_854

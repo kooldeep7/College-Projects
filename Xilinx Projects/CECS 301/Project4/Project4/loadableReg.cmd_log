@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Kuldeep/Desktop/New folder (3)/CECS 301 2019/Project4/loadableReg.xst" -ofn "C:/Users/Kuldeep/Desktop/New folder (3)/CECS 301 2019/Project4/loadableReg.syr" 

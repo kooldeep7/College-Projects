@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Kuldeep/Desktop/CECS CLASSES/301 Stuff/CECS 301 2019/project1/FA8_tf_isim_beh.exe" -prj "C:/Users/Kuldeep/Desktop/CECS CLASSES/301 Stuff/CECS 301 2019/project1/FA8_tf_beh.prj" "work.FA8_tf" "work.glbl" 

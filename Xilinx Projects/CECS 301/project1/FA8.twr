@@ -1,0 +1,148 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml FA8.twx FA8.ncd -o FA8.twr FA8.pcf -ucf Project1.ucf
+
+Design file:              FA8.ncd
+Physical constraint file: FA8.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Co             |   10.282|
+A<0>           |Y<0>           |    8.470|
+A<0>           |Y<1>           |    8.619|
+A<0>           |Y<2>           |    9.102|
+A<0>           |Y<3>           |    8.959|
+A<0>           |Y<4>           |   10.279|
+A<0>           |Y<5>           |   10.011|
+A<0>           |Y<6>           |    9.978|
+A<0>           |Y<7>           |   10.676|
+A<1>           |Co             |   10.413|
+A<1>           |Y<1>           |    8.734|
+A<1>           |Y<2>           |    9.233|
+A<1>           |Y<3>           |    9.090|
+A<1>           |Y<4>           |   10.410|
+A<1>           |Y<5>           |   10.142|
+A<1>           |Y<6>           |   10.109|
+A<1>           |Y<7>           |   10.807|
+A<2>           |Co             |    8.767|
+A<2>           |Y<2>           |    7.423|
+A<2>           |Y<3>           |    7.434|
+A<2>           |Y<4>           |    8.764|
+A<2>           |Y<5>           |    8.496|
+A<2>           |Y<6>           |    8.463|
+A<2>           |Y<7>           |    9.161|
+A<3>           |Co             |    9.080|
+A<3>           |Y<3>           |    7.743|
+A<3>           |Y<4>           |    9.077|
+A<3>           |Y<5>           |    8.809|
+A<3>           |Y<6>           |    8.776|
+A<3>           |Y<7>           |    9.474|
+A<4>           |Co             |    9.503|
+A<4>           |Y<4>           |    8.838|
+A<4>           |Y<5>           |    9.225|
+A<4>           |Y<6>           |    9.199|
+A<4>           |Y<7>           |    9.897|
+A<5>           |Co             |    7.440|
+A<5>           |Y<5>           |    7.168|
+A<5>           |Y<6>           |    7.136|
+A<5>           |Y<7>           |    7.834|
+A<6>           |Co             |    6.475|
+A<6>           |Y<6>           |    6.888|
+A<6>           |Y<7>           |    6.877|
+A<7>           |Co             |    6.943|
+A<7>           |Y<7>           |    7.341|
+B<0>           |Co             |    9.317|
+B<0>           |Y<0>           |    7.679|
+B<0>           |Y<1>           |    7.642|
+B<0>           |Y<2>           |    8.137|
+B<0>           |Y<3>           |    7.994|
+B<0>           |Y<4>           |    9.314|
+B<0>           |Y<5>           |    9.046|
+B<0>           |Y<6>           |    9.013|
+B<0>           |Y<7>           |    9.711|
+B<1>           |Co             |    8.963|
+B<1>           |Y<1>           |    7.299|
+B<1>           |Y<2>           |    7.783|
+B<1>           |Y<3>           |    7.640|
+B<1>           |Y<4>           |    8.960|
+B<1>           |Y<5>           |    8.692|
+B<1>           |Y<6>           |    8.659|
+B<1>           |Y<7>           |    9.357|
+B<2>           |Co             |    8.220|
+B<2>           |Y<2>           |    6.988|
+B<2>           |Y<3>           |    6.899|
+B<2>           |Y<4>           |    8.217|
+B<2>           |Y<5>           |    7.949|
+B<2>           |Y<6>           |    7.916|
+B<2>           |Y<7>           |    8.614|
+B<3>           |Co             |    8.403|
+B<3>           |Y<3>           |    7.074|
+B<3>           |Y<4>           |    8.400|
+B<3>           |Y<5>           |    8.132|
+B<3>           |Y<6>           |    8.099|
+B<3>           |Y<7>           |    8.797|
+B<4>           |Co             |    7.678|
+B<4>           |Y<4>           |    7.831|
+B<4>           |Y<5>           |    7.391|
+B<4>           |Y<6>           |    7.374|
+B<4>           |Y<7>           |    8.072|
+B<5>           |Co             |    7.792|
+B<5>           |Y<5>           |    7.512|
+B<5>           |Y<6>           |    7.488|
+B<5>           |Y<7>           |    8.186|
+B<6>           |Co             |    6.578|
+B<6>           |Y<6>           |    6.729|
+B<6>           |Y<7>           |    6.986|
+B<7>           |Co             |    7.096|
+B<7>           |Y<7>           |    7.506|
+Ci             |Co             |    8.781|
+Ci             |Y<0>           |    7.316|
+Ci             |Y<1>           |    7.110|
+Ci             |Y<2>           |    7.601|
+Ci             |Y<3>           |    7.458|
+Ci             |Y<4>           |    8.778|
+Ci             |Y<5>           |    8.510|
+Ci             |Y<6>           |    8.477|
+Ci             |Y<7>           |    9.175|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Feb 19 11:38:30 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 611 MB
+
+
+

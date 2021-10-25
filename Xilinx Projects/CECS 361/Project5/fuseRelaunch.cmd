@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/CECS 361/Project5/top_module_tb_isim_beh.exe" -prj "F:/CECS 361/Project5/top_module_tb_beh.prj" "top_module_tb" "work.glbl" 

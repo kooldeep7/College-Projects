@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 26 09:39:22 2021
+# Process ID: 10488
+# Current directory: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15928 C:\Users\KuldeepGohil\Desktop\Spring2021\CECS461\Labs\Lab2\lab2\lab2.xpr
+# Log file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/vivado.log
+# Journal file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd}
+save_project_as Midterm1B_KuldeepGohil C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil -force
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets buttons_GPIO] [get_bd_cells buttons]
+delete_bd_objs [get_bd_intf_ports btns_4bits]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_4bits ( 4 Buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+endgroup
+set_property location {4 1280 201} [get_bd_cells axi_gpio_0]
+set_property location {3 1249 227} [get_bd_cells axi_gpio_0]
+set_property name LEDs [get_bd_cells axi_gpio_0]
+set_property name leds_4bits [get_bd_intf_ports btns_4bits]
+set_property name LEDs [get_bd_intf_ports leds_4bits]
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS {0} CONFIG.GPIO_BOARD_INTERFACE {leds_4bits} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells LEDs]
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+write_bd_layout -format pdf -orientation portrait C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/midterm1BlockDiagram.pdf
+open_run impl_1
+open_bd_design {C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.srcs/sources_1/bd/design_1/design_1.bd}
+file copy -force C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.runs/impl_1/design_1_wrapper.sysdef C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.sdk/design_1_wrapper.hdf
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.runs/impl_1/design_1_wrapper.sysdef C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.sdk -hwspec C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.sdk/design_1_wrapper.hdf
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+open_bd_design {C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Midterm1/Midterm1B_KuldeepGohil/Midterm1B_KuldeepGohil.srcs/sources_1/bd/design_1/design_1.bd}
+open_run synth_1 -name synth_1

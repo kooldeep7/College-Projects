@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kuldeep\Desktop\CECS CLASSES\CECS 201\Ripple-Carry\mux.ncd
+OUTFILE=C:\Users\Kuldeep\Desktop\CECS CLASSES\CECS 201\Ripple-Carry\mux.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Kuldeep\Desktop\CECS CLASSES\CECS 201\Ripple-Carry
+LICENSE=WebPack
+USER_INFO=211302699_0_0_854

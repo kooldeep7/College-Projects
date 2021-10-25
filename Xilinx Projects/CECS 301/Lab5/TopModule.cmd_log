@@ -1,0 +1,161 @@
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.xst" -ofn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.xst" -ofn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.xst" -ofn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.xst" -ofn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.xst" -ofn "C:/Users/lenin/Xilinx/SysGen/14.7/LAB 05/Lab5/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 
+xst -intstyle ise -ifn "C:/Users/KuldeepGohil/Desktop/labs/LAB 05/Lab5/Lab5/TopModule.xst" -ofn "C:/Users/KuldeepGohil/Desktop/labs/LAB 05/Lab5/Lab5/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CECS301_Lab5_UCF.ucf -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 
+par -w -intstyle ise -ol high -mt off TopModule_map.ncd TopModule.ncd TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopModule.twx TopModule.ncd -o TopModule.twr TopModule.pcf -ucf CECS301_Lab5_UCF.ucf 
+bitgen -intstyle ise -f TopModule.ut TopModule.ncd 

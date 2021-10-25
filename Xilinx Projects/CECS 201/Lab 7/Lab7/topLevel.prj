@@ -1,0 +1,3 @@
+verilog work "Pulseit.v"
+verilog work "machine.v"
+verilog work "topLevel.v"

@@ -1,0 +1,29 @@
+Command line:
+   Encoder_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50411
+
+Sun Mar 05 21:17:15 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 845.984 Meg
+
+ Total Signals          : 15
+ Total Nets             : 24
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 147
+Total Line Count : 28
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 845.984 Meg
+
+Sun Mar 05 21:17:21 2017
+

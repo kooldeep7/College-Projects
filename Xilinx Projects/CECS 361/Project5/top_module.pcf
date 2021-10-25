@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 05 02:21:13 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "h_sync" LOCATE = SITE "B11" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "M18" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "P18" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "rgb<0>" LOCATE = SITE "A4" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "A6" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "D8" LEVEL 1;
+COMP "v_sync" LOCATE = SITE "B12" LEVEL 1;
+COMP "rst" LOCATE = SITE "N17" LEVEL 1;
+SCHEMATIC END;
+

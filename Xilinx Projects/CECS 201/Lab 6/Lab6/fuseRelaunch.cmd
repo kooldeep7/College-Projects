@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Kuldeep/Desktop/Lab 6/Lab6/counter32_tb_isim_beh.exe" -prj "C:/Users/Kuldeep/Desktop/Lab 6/Lab6/counter32_tb_beh.prj" "work.counter32_tb" "work.glbl" 

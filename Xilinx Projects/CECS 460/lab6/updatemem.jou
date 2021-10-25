@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Fri Apr 23 11:05:49 2021
+# Process ID: 4264
+# Current directory: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab6
+# Command line: updatemem.exe -mode batch -source S:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab6/lab6.sdk/DeterminantMicroBlaze_wrapper_hw_platform_0/DeterminantMicroBlaze_wrapper.mmi -data S:/Xilinx/SDK/2018.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc DeterminantMicroBlaze_i/microblaze_0 -bit C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab6/lab6.sdk/DeterminantMicroBlaze_wrapper_hw_platform_0/DeterminantMicroBlaze_wrapper.bit -out C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab6/lab6.sdk/DeterminantMicroBlaze_wrapper_hw_platform_0/download.bit -force
+# Log file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab6/updatemem.log
+# Journal file: C:/Users/KuldeepGohil/Desktop/Spring2021/CECS460/labs/VivadoProjects/lab6\updatemem.jou
+#-----------------------------------------------------------
+source S:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace

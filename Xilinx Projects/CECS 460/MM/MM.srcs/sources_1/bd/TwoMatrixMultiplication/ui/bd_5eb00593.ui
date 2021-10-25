@@ -1,0 +1,123 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port usb_uart -pg 1 -y 0 -defaultsOSRD
+preplace port clk -pg 1 -y 80 -defaultsOSRD
+preplace port reset -pg 1 -y 60 -defaultsOSRD
+preplace portBus LED -pg 1 -y -160 -defaultsOSRD
+preplace portBus SW -pg 1 -y 220 -defaultsOSRD
+preplace inst axi_gpio_22 -pg 1 -lvl 4 -y 580 -defaultsOSRD
+preplace inst axi_gpio_10 -pg 1 -lvl 2 -y 50 -defaultsOSRD
+preplace inst axi_gpio_8 -pg 1 -lvl 1 -y 1060 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 4 -y -360 -defaultsOSRD
+preplace inst axi_gpio_23 -pg 1 -lvl 4 -y 730 -defaultsOSRD
+preplace inst axi_gpio_11 -pg 1 -lvl 2 -y 190 -defaultsOSRD
+preplace inst axi_gpio_9 -pg 1 -lvl 2 -y -90 -defaultsOSRD
+preplace inst axi_gpio_24 -pg 1 -lvl 4 -y 900 -defaultsOSRD
+preplace inst axi_gpio_12 -pg 1 -lvl 2 -y 330 -defaultsOSRD
+preplace inst axi_gpio_25 -pg 1 -lvl 4 -y 1040 -defaultsOSRD
+preplace inst axi_gpio_13 -pg 1 -lvl 2 -y 470 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 6 -y -400 -defaultsOSRD
+preplace inst axi_gpio_26 -pg 1 -lvl 4 -y 1180 -defaultsOSRD
+preplace inst axi_gpio_14 -pg 1 -lvl 2 -y 610 -defaultsOSRD
+preplace inst topLevel_0 -pg 1 -lvl 3 -y 380 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 3 -y -380 -defaultsOSRD
+preplace inst axi_gpio_15 -pg 1 -lvl 2 -y 770 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -y -90 -defaultsOSRD
+preplace inst axi_gpio_16 -pg 1 -lvl 2 -y 920 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 1 -y 50 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y -50 -defaultsOSRD
+preplace inst axi_gpio_17 -pg 1 -lvl 2 -y 1060 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 1 -y 190 -defaultsOSRD
+preplace inst axi_gpio_18 -pg 1 -lvl 4 -y -20 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 5 -y 150 -defaultsOSRD
+preplace inst axi_gpio_19 -pg 1 -lvl 4 -y 130 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 1 -y 470 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 3 -y 710 -defaultsOSRD
+preplace inst axi_gpio_5 -pg 1 -lvl 1 -y 610 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 70 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 6 -y 330 -defaultsOSRD
+preplace inst axi_gpio_20 -pg 1 -lvl 4 -y 270 -defaultsOSRD
+preplace inst axi_gpio_6 -pg 1 -lvl 1 -y 760 -defaultsOSRD
+preplace inst axi_gpio_21 -pg 1 -lvl 4 -y 430 -defaultsOSRD
+preplace inst axi_gpio_7 -pg 1 -lvl 1 -y 920 -defaultsOSRD
+preplace netloc axi_gpio_6_gpio_io_o 1 1 2 340 1170 890
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 0 7 -70 1310 NJ 1310 NJ 1310 NJ 1310 NJ 1310 NJ 1310 3340
+preplace netloc axi_gpio_13_gpio_io_o 1 2 1 810
+preplace netloc microblaze_0_axi_periph_M16_AXI 1 1 6 470 1400 NJ 1400 NJ 1400 NJ 1400 NJ 1400 3210
+preplace netloc microblaze_0_axi_periph_M24_AXI 1 3 4 1500 1460 NJ 1460 NJ 1460 3150
+preplace netloc axi_gpio_14_gpio_io_o 1 2 1 860
+preplace netloc util_vector_logic_0_Res 1 3 1 N
+preplace netloc axi_gpio_1_gpio_io_o 1 1 2 390J -170 890
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 0 7 -60 1320 NJ 1320 NJ 1320 NJ 1320 NJ 1320 NJ 1320 3330
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 0 7 0 840 400J 690 810J 820 NJ 820 NJ 820 NJ 820 3260
+preplace netloc microblaze_0_axi_periph_M21_AXI 1 3 4 1460 -1060 NJ -1060 NJ -1060 3280
+preplace netloc rst_clk_wiz_0_100M_bus_struct_reset 1 4 2 NJ -380 2730J
+preplace netloc microblaze_0_axi_periph_M23_AXI 1 3 4 1490 1450 NJ 1450 NJ 1450 3160
+preplace netloc rst_clk_wiz_0_100M_mb_reset 1 4 1 1960
+preplace netloc topLevel_0_C00 1 3 2 1370 1570 1950
+preplace netloc microblaze_0_dlmb_1 1 5 1 2750J
+preplace netloc topLevel_0_C01 1 3 2 1420 1500 1930
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 2 5 960 790 1410J 350 1970J 410 NJ 410 3270
+preplace netloc topLevel_0_C02 1 3 2 1400 1510 1920
+preplace netloc axi_gpio_3_gpio_io_o 1 1 2 390 1140 830J
+preplace netloc microblaze_0_axi_periph_M17_AXI 1 1 6 480 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 3200
+preplace netloc microblaze_0_M_AXI_DP 1 5 1 2740
+preplace netloc axi_gpio_9_gpio_io_o 1 2 1 880
+preplace netloc axi_gpio_17_gpio_io_o 1 2 1 920
+preplace netloc microblaze_0_axi_periph_M14_AXI 1 1 6 450 1380 NJ 1380 NJ 1380 NJ 1380 NJ 1380 3230
+preplace netloc axi_gpio_10_gpio_io_o 1 2 1 860
+preplace netloc microblaze_0_axi_periph_M12_AXI 1 1 6 430 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 3250
+preplace netloc microblaze_0_ilmb_1 1 5 1 2720
+preplace netloc microblaze_0_axi_periph_M08_AXI 1 0 7 20 1270 NJ 1270 NJ 1270 NJ 1270 NJ 1270 NJ 1270 3100
+preplace netloc axi_gpio_16_gpio_io_o 1 2 1 900
+preplace netloc mdm_1_debug_sys_rst 1 3 1 1310
+preplace netloc axi_gpio_15_gpio_io_o 1 2 1 880
+preplace netloc microblaze_0_axi_periph_M13_AXI 1 1 6 440 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 3240
+preplace netloc SW_1 1 0 3 -90J -210 340 -220 930
+preplace netloc microblaze_0_axi_periph_M18_AXI 1 1 6 490 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 3190
+preplace netloc topLevel_0_C20 1 3 2 1330J 1550 1880
+preplace netloc axi_uartlite_0_UART 1 3 4 1380 810 N 810 N 810 3360
+preplace netloc topLevel_0_C21 1 3 2 1320J 1560 1870
+preplace netloc microblaze_0_axi_periph_M27_AXI 1 3 4 1530 1490 NJ 1490 NJ 1490 3120
+preplace netloc microblaze_0_Clk 1 0 6 -10 -170 350 1200 940 800 1430 -110 1980 -110 2760J
+preplace netloc topLevel_0_C22 1 3 2 1310J 1580 1940
+preplace netloc topLevel_0_C10 1 3 2 1390J 1520 1910
+preplace netloc topLevel_0_C11 1 3 2 1360J 1530 1900
+preplace netloc topLevel_0_C12 1 3 2 1340J 1540 1890
+preplace netloc microblaze_0_axi_periph_M11_AXI 1 1 6 420 1300 NJ 1300 NJ 1300 NJ 1300 NJ 1300 3070
+preplace netloc microblaze_0_axi_periph_M10_AXI 1 1 6 410 1290 NJ 1290 NJ 1290 NJ 1290 NJ 1290 3080
+preplace netloc microblaze_0_axi_periph_M22_AXI 1 3 4 1480 1440 NJ 1440 NJ 1440 3170
+preplace netloc microblaze_0_axi_periph_M09_AXI 1 0 7 30 1280 NJ 1280 NJ 1280 NJ 1280 NJ 1280 NJ 1280 3090
+preplace netloc microblaze_0_debug 1 3 2 1330J -100 1970J
+preplace netloc microblaze_0_axi_periph_M25_AXI 1 3 4 1510 1470 NJ 1470 NJ 1470 3140
+preplace netloc topLevel_0_LED 1 3 4 1350 1590 N 1590 N 1590 3350
+preplace netloc axi_gpio_7_gpio_io_o 1 1 2 330 1180 910
+preplace netloc clk_wiz_0_locked 1 3 1 1320
+preplace netloc axi_gpio_5_gpio_io_o 1 1 2 370 1160 870
+preplace netloc microblaze_0_axi_periph_M20_AXI 1 3 4 1450 -1070 NJ -1070 NJ -1070 3290
+preplace netloc microblaze_0_axi_periph_M06_AXI 1 0 7 -30 1350 NJ 1350 NJ 1350 NJ 1350 NJ 1350 NJ 1350 3300
+preplace netloc axi_gpio_4_gpio_io_o 1 1 2 380 1150 850
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 0 7 -50 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 3320
+preplace netloc axi_gpio_11_gpio_io_o 1 2 1 840
+preplace netloc microblaze_0_axi_periph_M07_AXI 1 0 7 10 1260 NJ 1260 NJ 1260 NJ 1260 NJ 1260 NJ 1260 3110
+preplace netloc axi_gpio_0_gpio_io_o 1 1 2 370J -180 910
+preplace netloc axi_gpio_8_gpio_io_o 1 1 2 320 1190 930
+preplace netloc microblaze_0_axi_periph_M19_AXI 1 3 4 1470 1430 NJ 1430 NJ 1430 3180
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 0 7 -40 1340 NJ 1340 NJ 1340 NJ 1340 NJ 1340 NJ 1340 3310
+preplace netloc reset_1 1 0 3 -100 -200 350 -210 960
+preplace netloc axi_gpio_2_gpio_io_o 1 1 2 380 -190 900J
+preplace netloc microblaze_0_axi_periph_M15_AXI 1 1 6 460 1390 NJ 1390 NJ 1390 NJ 1390 NJ 1390 3220
+preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn 1 0 6 -20 -180 360J 1210 950 830 1440J -120 1980 -320 2770
+preplace netloc clk_1 1 0 3 -80 -190 360 -200 950
+preplace netloc axi_gpio_12_gpio_io_o 1 2 1 820
+preplace netloc microblaze_0_axi_periph_M26_AXI 1 3 4 1520 1480 NJ 1480 NJ 1480 3130
+levelinfo -pg 1 -120 180 670 1160 1700 2480 2920 3380 -top -1080 -bot 1660
+"
+}
+{
+   "da_axi4_cnt":"28",
+   "da_mb_cnt":"1"
+}

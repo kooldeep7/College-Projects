@@ -1,0 +1,24 @@
+18:15:00 **** Build of configuration Debug for project TestApp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.o" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:23:29: error: 'XPAR_RGB_LEDS_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_SCUWDT_DEVICE_ID'?
+  XGpio_Initialize(&rgb_led, XPAR_RGB_LEDS_DEVICE_ID);
+                             ^~~~~~~~~~~~~~~~~~~~~~~
+                             XPAR_SCUWDT_DEVICE_ID
+../src/lab2.c:23:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:26:30: error: 'XPAR_LEDS_4BITS_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_RGB_LEDS_DEVICE_ID'?
+  XGpio_Initialize(&led_4bit, XPAR_LEDS_4BITS_DEVICE_ID);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+                              XPAR_RGB_LEDS_DEVICE_ID
+../src/lab2.c:39:4: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+    sleep(1);
+    ^~~~~
+make: *** [src/subdir.mk:23: src/lab2.o] Error 1
+
+18:15:01 Build Finished (took 438ms)
+

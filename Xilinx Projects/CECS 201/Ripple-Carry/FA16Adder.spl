@@ -1,0 +1,11 @@
+[Inputs]
+Ci
+=A[15:0]=
+=B[15:0]=
+[Outputs]
+Co
+=S[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel FA16Adder
+

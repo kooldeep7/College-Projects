@@ -1,0 +1,14 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Kuldeep/Desktop/Lab 7/Lab7/topLevel_isim_beh.exe -prj C:/Users/Kuldeep/Desktop/Lab 7/Lab7/topLevel_beh.prj work.topLevel work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Kuldeep/Desktop/Lab 7/Lab7/Pulseit.v" into library work
+Analyzing Verilog file "C:/Users/Kuldeep/Desktop/Lab 7/Lab7/machine.v" into library work
+Analyzing Verilog file "C:/Users/Kuldeep/Desktop/Lab 7/Lab7/topLevel.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:604 - "C:/Users/Kuldeep/Desktop/Lab 7/Lab7/topLevel.v" Line 28: Module instantiation should have an instance name
+WARNING:HDLCompiler:604 - "C:/Users/Kuldeep/Desktop/Lab 7/Lab7/topLevel.v" Line 29: Module instantiation should have an instance name
+Completed static elaboration
+ERROR:Simulator:793 - Unable to elaborate instantiated module Pulse_Generator

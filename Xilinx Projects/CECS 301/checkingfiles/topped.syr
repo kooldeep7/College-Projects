@@ -1,0 +1,575 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: topped.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topped.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "topped"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : topped
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\shiftreg.v" into library work
+Parsing module <shiftreg>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\sevenseg.v" into library work
+Parsing module <sevenseg>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\rotator.v" into library work
+Parsing module <rotator>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\pulsegenerator.v" into library work
+Parsing module <pulsegenerator>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\posedgedetect.v" into library work
+Parsing module <posedgedetect>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\mux8to1.v" into library work
+Parsing module <mux8to1>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\mod8.v" into library work
+Parsing module <mod8>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\counterped.v" into library work
+Parsing module <counterped>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\barrelshifter.v" into library work
+Parsing module <barrelshifter>.
+Analyzing Verilog file "E:\New folder (3)\CECS 301 2019\checkingfiles\topped.v" into library work
+Parsing module <topped>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <topped>.
+
+Elaborating module <pulsegenerator>.
+
+Elaborating module <shiftreg>.
+
+Elaborating module <posedgedetect>.
+
+Elaborating module <counterped>.
+
+Elaborating module <rotator>.
+
+Elaborating module <barrelshifter>.
+
+Elaborating module <mod8>.
+
+Elaborating module <mux8to1>.
+
+Elaborating module <sevenseg>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <topped>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\topped.v".
+    Summary:
+	no macro.
+Unit <topped> synthesized.
+
+Synthesizing Unit <pulsegenerator>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\pulsegenerator.v".
+    Found 17-bit register for signal <pulse>.
+    Found 17-bit adder for signal <pulse[16]_GND_2_o_add_1_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+Unit <pulsegenerator> synthesized.
+
+Synthesizing Unit <shiftreg>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\shiftreg.v".
+    Found 10-bit register for signal <q>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <shiftreg> synthesized.
+
+Synthesizing Unit <posedgedetect>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\posedgedetect.v".
+    Found 1-bit register for signal <q2>.
+    Found 1-bit register for signal <q1>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <posedgedetect> synthesized.
+
+Synthesizing Unit <counterped>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\counterped.v".
+    Found 32-bit register for signal <inVal>.
+    Found 32-bit adder for signal <inVal[31]_GND_5_o_add_0_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <counterped> synthesized.
+
+Synthesizing Unit <rotator>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\rotator.v".
+    Found 18-bit register for signal <counter>.
+    Found 18-bit adder for signal <counter[17]_GND_6_o_add_1_OUT> created at line 37.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <rotator> synthesized.
+
+Synthesizing Unit <barrelshifter>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\barrelshifter.v".
+    Found 8-bit register for signal <anode>.
+INFO:Xst:1799 - State 11111111 is never reached in FSM <anode>.
+    Found finite state machine <FSM_0> for signal <anode>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 16                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 11111110                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <barrelshifter> synthesized.
+
+Synthesizing Unit <mod8>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\mod8.v".
+    Found 3-bit register for signal <count>.
+    Found 3-bit adder for signal <count[2]_GND_9_o_add_1_OUT> created at line 40.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <mod8> synthesized.
+
+Synthesizing Unit <mux8to1>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\mux8to1.v".
+    Found 4-bit 8-to-1 multiplexer for signal <hexVal> created at line 34.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux8to1> synthesized.
+
+Synthesizing Unit <sevenseg>.
+    Related source file is "E:\New folder (3)\CECS 301 2019\checkingfiles\sevenseg.v".
+    Found 16x8-bit Read Only RAM for signal <cathode>
+    Summary:
+	inferred   1 RAM(s).
+Unit <sevenseg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 4
+ 17-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 7
+ 1-bit register                                        : 2
+ 10-bit register                                       : 1
+ 17-bit register                                       : 1
+ 18-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+# Multiplexers                                         : 2
+ 18-bit 2-to-1 multiplexer                             : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment S:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment S:\Xilinx\14.7\ISE_DS\ISE\.
+
+Synthesizing (advanced) Unit <counterped>.
+The following registers are absorbed into counter <inVal>: 1 register on signal <inVal>.
+Unit <counterped> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mod8>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <mod8> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pulsegenerator>.
+The following registers are absorbed into counter <pulse>: 1 register on signal <pulse>.
+Unit <pulsegenerator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rotator>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <rotator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sevenseg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_cathode> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hexVal>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <cathode>       |          |
+    -----------------------------------------------------------------------
+Unit <sevenseg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 4
+ 17-bit up counter                                     : 1
+ 18-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Multiplexers                                         : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <anode[1:8]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ 11111110 | 11111110
+ 11111101 | 11111101
+ 11111011 | 11111011
+ 11110111 | 11110111
+ 11101111 | 11101111
+ 11011111 | 11011111
+ 10111111 | 10111111
+ 01111111 | 01111111
+ 11111111 | unreached
+----------------------
+
+Optimizing unit <shiftreg> ...
+
+Optimizing unit <topped> ...
+INFO:Xst:2261 - The FF/Latch <pulsegenerator/pulse_0> in Unit <topped> is equivalent to the following FF/Latch, which will be removed : <rotator/counter_0> 
+INFO:Xst:2261 - The FF/Latch <pulsegenerator/pulse_1> in Unit <topped> is equivalent to the following FF/Latch, which will be removed : <rotator/counter_1> 
+INFO:Xst:2261 - The FF/Latch <pulsegenerator/pulse_2> in Unit <topped> is equivalent to the following FF/Latch, which will be removed : <rotator/counter_2> 
+INFO:Xst:2261 - The FF/Latch <pulsegenerator/pulse_3> in Unit <topped> is equivalent to the following FF/Latch, which will be removed : <rotator/counter_3> 
+INFO:Xst:2261 - The FF/Latch <pulsegenerator/pulse_4> in Unit <topped> is equivalent to the following FF/Latch, which will be removed : <rotator/counter_4> 
+INFO:Xst:2261 - The FF/Latch <pulsegenerator/pulse_5> in Unit <topped> is equivalent to the following FF/Latch, which will be removed : <rotator/counter_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topped, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : topped.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 248
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 64
+#      LUT2                        : 2
+#      LUT3                        : 10
+#      LUT4                        : 9
+#      LUT5                        : 5
+#      LUT6                        : 24
+#      MUXCY                       : 64
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 61
+# FlipFlops/Latches                : 84
+#      FDC                         : 32
+#      FDCE                        : 45
+#      FDP                         : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 2
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              84  out of  126800     0%  
+ Number of Slice LUTs:                  117  out of  63400     0%  
+    Number used as Logic:               117  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    125
+   Number with an unused Flip Flop:      41  out of    125    32%  
+   Number with an unused LUT:             8  out of    125     6%  
+   Number of fully used LUT-FF pairs:    76  out of    125    60%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    210     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 84    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.513ns (Maximum Frequency: 397.978MHz)
+   Minimum input arrival time before clock: 0.828ns
+   Maximum output required time after clock: 2.627ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.513ns (frequency: 397.978MHz)
+  Total number of paths / destination ports: 1521 / 128
+-------------------------------------------------------------------------
+Delay:               2.513ns (Levels of Logic = 3)
+  Source:            rotator/counter_6 (FF)
+  Destination:       mod8/count_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: rotator/counter_6 to mod8/count_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.361   0.758  rotator/counter_6 (rotator/counter_6)
+     LUT6:I0->O           14   0.097   0.511  rotator/rotate<17>2 (rotator/rotate<17>1)
+     LUT4:I2->O            3   0.097   0.583  rotator/rotate<17>4_rstpot (rotator/rotate<17>4_rstpot)
+     LUT4:I1->O            1   0.097   0.000  mod8/count_2_dpot (mod8/count_2_dpot)
+     FDCE:D                    0.008          mod8/count_2
+    ----------------------------------------
+    Total                      2.513ns (0.660ns logic, 1.853ns route)
+                                       (26.3% logic, 73.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 85 / 85
+-------------------------------------------------------------------------
+Offset:              0.828ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       posedgedetect/q2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to posedgedetect/q2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            84   0.001   0.478  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.349          posedgedetect/q1
+    ----------------------------------------
+    Total                      0.828ns (0.350ns logic, 0.478ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 372 / 15
+-------------------------------------------------------------------------
+Offset:              2.627ns (Levels of Logic = 4)
+  Source:            mod8/count_1 (FF)
+  Destination:       cathode<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mod8/count_1 to cathode<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.361   0.803  mod8/count_1 (mod8/count_1)
+     LUT6:I0->O            1   0.097   0.000  mux8to1/Mmux_hexVal_3 (mux8to1/Mmux_hexVal_3)
+     MUXF7:I1->O           7   0.279   0.650  mux8to1/Mmux_hexVal_2_f7 (hexVal<0>)
+     LUT4:I0->O            1   0.097   0.339  sevenseg/Mram_cathode41 (cathode_4_OBUF)
+     OBUF:I->O                 0.000          cathode_4_OBUF (cathode<4>)
+    ----------------------------------------
+    Total                      2.627ns (0.834ns logic, 1.793ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.513|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.37 secs
+ 
+--> 
+
+Total memory usage is 5021820 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

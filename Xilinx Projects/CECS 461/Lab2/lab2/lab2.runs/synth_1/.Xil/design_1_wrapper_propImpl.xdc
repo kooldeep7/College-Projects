@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/KuldeepGohil/Desktop/Spring2021/CECS461/Labs/Lab2/lab2/lab2.srcs/constrs_1/new/lab2.xdc rfile:../../../lab2.srcs/constrs_1/new/lab2.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V16 [get_ports {btns_4bits_tri_i[2]}]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R18 [get_ports {btns_4bits_tri_i[0]}]

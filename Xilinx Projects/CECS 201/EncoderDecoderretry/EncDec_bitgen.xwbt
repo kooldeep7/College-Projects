@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kuldeep\Desktop\EncoderDecoderretry\EncDec.ncd
+OUTFILE=C:\Users\Kuldeep\Desktop\EncoderDecoderretry\EncDec.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Kuldeep\Desktop\EncoderDecoderretry
+LICENSE=WebPack
+USER_INFO=211302699_0_0_854

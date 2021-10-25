@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Register_File.v} -lang verilog -prj Lab5 -o Register_File.spl -module Register_File -template C:/Users/trieu/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 Register_File.spl {C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Register_File.sym} 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Register_File.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Register_File.syr" 

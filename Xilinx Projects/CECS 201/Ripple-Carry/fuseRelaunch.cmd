@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/Ripple-Carry/FA16Adder_tb_isim_beh.exe" -prj "C:/Users/Kuldeep/Desktop/CECS CLASSES/CECS 201/Ripple-Carry/FA16Adder_tb_beh.prj" "work.FA16Adder_tb" "work.glbl" 

@@ -1,0 +1,511 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Register_File.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Register_File.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Register_File"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Register_File
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\reg16.v" into library work
+Parsing module <reg16>.
+Analyzing Verilog file "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\decoder_3to8.v" into library work
+Parsing module <decoder_3to8>.
+Analyzing Verilog file "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\Register_File.v" into library work
+Parsing module <Register_File>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Register_File>.
+
+Elaborating module <decoder_3to8>.
+
+Elaborating module <reg16>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Register_File>.
+    Related source file is "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\Register_File.v".
+    Summary:
+	no macro.
+Unit <Register_File> synthesized.
+
+Synthesizing Unit <decoder_3to8>.
+    Related source file is "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\decoder_3to8.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <decoder_3to8> synthesized.
+
+Synthesizing Unit <reg16>.
+    Related source file is "C:\Users\trieu\Desktop\CECS 301 HW\Lab5\reg16.v".
+    Found 16-bit register for signal <dout>.
+    Found 1-bit tristate buffer for signal <DA<15>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<14>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<13>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<12>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<11>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<10>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<9>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<8>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<7>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<6>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<5>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<4>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<3>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<2>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<1>> created at line 20
+    Found 1-bit tristate buffer for signal <DA<0>> created at line 20
+    Found 1-bit tristate buffer for signal <DB<15>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<14>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<13>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<12>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<11>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<10>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<9>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<8>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<7>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<6>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<5>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<4>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<3>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<2>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<1>> created at line 21
+    Found 1-bit tristate buffer for signal <DB<0>> created at line 21
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  32 Tristate(s).
+Unit <reg16> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ 16-bit register                                       : 8
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+# Tristates                                            : 256
+ 1-bit tristate buffer                                 : 256
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 128
+ Flip-Flops                                            : 128
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <reg7/dout_15> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_14> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_13> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_12> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_11> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_10> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_9> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_8> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_7> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_6> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_5> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_4> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_3> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_2> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_1> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg7/dout_0> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_15> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_14> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_13> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_12> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_11> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_10> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_9> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_8> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_7> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_6> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_5> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_4> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_3> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_2> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_1> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg6/dout_0> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_15> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_14> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_13> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_12> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_11> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_10> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_9> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_8> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_7> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_6> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_5> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_4> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_3> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_2> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_1> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg5/dout_0> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_15> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_14> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_13> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_12> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_11> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_10> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_9> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_8> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_7> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_6> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_5> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_4> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_3> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_2> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_1> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg4/dout_0> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_15> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_14> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_13> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_12> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_11> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_10> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_9> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_8> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_7> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_6> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_5> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_4> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_3> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_2> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_1> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg3/dout_0> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_15> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_14> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_13> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_12> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_11> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_10> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_9> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_8> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_7> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_6> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_5> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_4> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_3> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_2> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_1> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg2/dout_0> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_15> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_14> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_13> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_12> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_11> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_10> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_9> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_8> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_7> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_6> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_5> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_4> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_3> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_2> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_1> of sequential type is unconnected in block <Register_File>.
+WARNING:Xst:2677 - Node <reg1/dout_0> of sequential type is unconnected in block <Register_File>.
+
+Optimizing unit <Register_File> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Register_File, actual ratio is 0.
+FlipFlop reg0/dout_15 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_14 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_13 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_12 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_11 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_10 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_9 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_8 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop reg0/dout_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Register_File.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      LUT4                        : 1
+# FlipFlops/Latches                : 32
+#      FDCE                        : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 53
+#      IBUF                        : 21
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                    1  out of  63400     0%  
+    Number used as Logic:                 1  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      1
+   Number with an unused Flip Flop:       1  out of      1   100%  
+   Number with an unused LUT:             0  out of      1     0%  
+   Number of fully used LUT-FF pairs:     0  out of      1     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          60
+ Number of bonded IOBs:                  54  out of    210    25%  
+    IOB Flip Flops/Latches:              32
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 1.135ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 192 / 96
+-------------------------------------------------------------------------
+Offset:              1.135ns (Levels of Logic = 2)
+  Source:            W_Adr<2> (PAD)
+  Destination:       reg0/dout_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: W_Adr<2> to reg0/dout_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.556  W_Adr_2_IBUF (W_Adr_2_IBUF)
+     LUT4:I0->O           32   0.097   0.386  dec0/Mmux_y11 (ld<0>)
+     FDCE:CE                   0.095          reg0/dout_0
+    ----------------------------------------
+    Total                      1.135ns (0.193ns logic, 0.942ns route)
+                                       (17.0% logic, 83.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            reg0/dout_15_1 (FF)
+  Destination:       R<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: reg0/dout_15_1 to R<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.361   0.279  reg0/dout_15_1 (reg0/dout_15_1)
+     OBUF:I->O                 0.000          R_15_OBUF (R<15>)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.88 secs
+ 
+--> 
+
+Total memory usage is 474488 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  112 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

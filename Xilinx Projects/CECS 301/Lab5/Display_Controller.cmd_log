@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Display_Controller.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Display_Controller.syr" 
+vhdtdtfi -lib work {C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Display_Controller.v} -lang verilog -prj Lab5 -o Display_Controller.spl -module Display_Controller -template C:/Users/trieu/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 Display_Controller.spl {C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Display_Controller.sym} 
+xst -intstyle ise -ifn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Display_Controller.xst" -ofn "C:/Users/trieu/Desktop/CECS 301 HW/Lab5/Display_Controller.syr" 

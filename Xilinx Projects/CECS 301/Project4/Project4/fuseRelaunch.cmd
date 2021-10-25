@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Kuldeep/Desktop/New folder (3)/CECS 301 2019/Project4/memory_tb_isim_beh.exe" -prj "C:/Users/Kuldeep/Desktop/New folder (3)/CECS 301 2019/Project4/memory_tb_beh.prj" "work.memory_tb" "work.glbl" 

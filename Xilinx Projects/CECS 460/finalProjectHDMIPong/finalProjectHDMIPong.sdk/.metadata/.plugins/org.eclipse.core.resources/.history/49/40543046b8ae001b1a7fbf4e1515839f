@@ -1,0 +1,234 @@
+/**
+ * Example of using the Digilent display drivers for Zybo Z7 HDMI output, with animation
+ * Russell Joyce, 11/03/2019
+ */
+
+#include <stdio.h>
+#include "xil_types.h"
+#include "xil_cache.h"
+#include "xparameters.h"
+#include "display_ctrl.h"
+#include "xgpio.h"
+
+// Frame size (based on 1440x900 resolution, 32 bits per pixel)
+#define MAX_FRAME (1920*1080)
+#define FRAME_STRIDE (1920*4)
+
+DisplayCtrl dispCtrl; // Display driver struct
+u32 frameBuf[DISPLAY_NUM_FRAMES][MAX_FRAME] __attribute__((aligned(0x20))); // Frame buffers for video data
+void *pFrames[DISPLAY_NUM_FRAMES]; // Array of pointers to the frame buffers
+
+// GPIO structs
+XGpio dip, push;
+int psb_check, dip_check; // variable used to store data from gpio
+
+// parameters to control the ball
+int ballx, bally; // variables to store current ball position
+int ballxstart = 960;
+int ballystart = 500;
+int ballwidth = 64;
+int ballheight = 64;
+
+// variable to set the paddle size and movement
+int paddlewidth = 42;
+int paddleheight = 288;
+int paddlemove = 40;
+
+// parameters to control the player 1 paddle
+int paddle1x, paddle1y; // variables to store current player 1 paddle position
+int paddle1xstart = 20;
+int paddle1ystart = 400;
+
+// parameters to control the player 2 paddle
+int paddle2x, paddle2y; // variables to store current player 2 paddle position
+int paddle2xstart = 1856;
+int paddle2ystart = 400;
+
+int main(void) {
+	// Initialize an array of pointers to the 2 frame buffers
+	int i;
+	u32 red, green, blue;
+	for (i = 0; i < DISPLAY_NUM_FRAMES; i++)
+		pFrames[i] = frameBuf[i];
+
+	XGpio_Initialize(&dip, XPAR_SWITCHES_DEVICE_ID);
+    XGpio_SetDataDirection(&dip, 1, 0xffffffff);
+
+    XGpio_Initialize(&push, XPAR_BUTTONS_DEVICE_ID);
+    XGpio_SetDataDirection(&push, 1, 0xffffffff);
+
+	// Initialize the display controller
+	DisplayInitialize(&dispCtrl, XPAR_AXIVDMA_0_DEVICE_ID, XPAR_VTC_0_DEVICE_ID, XPAR_HDMI_AXI_DYNCLK_0_BASEADDR, pFrames, FRAME_STRIDE);
+
+	// Start with the first frame buffer (of two)
+	DisplayChangeFrame(&dispCtrl, 0);
+
+	// Set the display resolution
+	DisplaySetMode(&dispCtrl, &VMODE_1920x1080);
+
+	// Enable video output
+	DisplayStart(&dispCtrl);
+
+	printf("\n\r");
+	printf("HDMI output enabled\n\r");
+	printf("Current Resolution: %s\n\r", dispCtrl.vMode.label);
+	printf("Pixel Clock Frequency: %.3fMHz\n\r", dispCtrl.pxlFreq);
+	printf("Starting animation loop...\n\r");
+
+	// Get parameters from display controller struct
+	int x, y;
+	u32 stride = dispCtrl.stride / 4;
+	u32 width = dispCtrl.vMode.width;
+	u32 height = dispCtrl.vMode.height;
+
+	u32 *frame;
+	int right = 1;
+	int down = 1;
+	int xpos = 0;
+	int ypos = 0;
+	u32 buff = dispCtrl.curFrame;
+
+	while (1) {
+		// check the dip switch input
+		dip_check = XGpio_DiscreteRead(&dip, 1);
+
+		// dip switches control the color of the ball and paddle
+		if (dip_check == 0x1)
+		{
+			red = 0;
+			green = 0;
+			blue = 255;
+		}
+		else if (dip_check == 0x2)
+		{
+			red = 0;
+			green = 255;
+			blue = 0;
+		}
+		else if (dip_check == 0x3)
+		{
+			red = 255;
+			green = 255;
+			blue = 0;
+		}
+		else if (dip_check == 0x4)
+		{
+			red = 255;
+			green = 0;
+			blue = 0;
+		}
+		else if (dip_check == 0x5)
+		{
+			red = 255;
+			green = 0;
+			blue = 255;
+		}
+		else if (dip_check == 0x6)
+		{
+			red = 0;
+			green = 255;
+			blue = 255;
+		}
+		else if (dip_check == 0x7)
+		{
+			red = 255;
+			green = 255;
+			blue = 255;
+		}
+		else if (dip_check == 0x8)
+		{
+			red = 255;
+			green = 155;
+			blue = 15;
+		}
+		else
+		{
+			red = 0;
+			green = 0;
+			blue = 0;
+		}
+
+		// Check the push button input
+		psb_check = XGpio_DiscreteRead(&push, 1);
+		// push buttons control the movement of the paddles
+		if ((psb_check == 0x1) && ((paddle1ystart - 20) > 0))
+		{
+			paddle1ystart-=paddlemove;
+		}
+		else if ((psb_check == 0x2) && (((paddle1ystart + paddleheight) + 20) < height))
+		{
+			paddle1ystart+=paddlemove;
+		}
+		else if ((psb_check == 0x4) && ((paddle2ystart - 20) > 0))
+		{
+			paddle2ystart-=paddlemove;
+		}
+		else if ((psb_check == 0x8) && (((paddle2ystart + paddleheight) + 20) < height))
+		{
+			paddle2ystart+=paddlemove;
+		}
+
+		// Switch the frame we're modifying to be the back buffer (1 to 0, or 0 to 1)
+		buff = !buff;
+		frame = (u32 *)dispCtrl.framePtr[buff];
+
+		// Clear the entire frame to white (inefficient, but it works)
+		memset(frame, 0xFF, MAX_FRAME*4);
+
+		// Adjust the position of the square
+		if (right) {
+			ballxstart+=5;
+			if (ballxstart > width-64)
+				right = 0;
+		}
+		else {
+			ballxstart-=5;
+			if (ballxstart < 0)
+				right = 1;
+		}
+		if (down) {
+			ballystart+=5;
+			if (ballystart > height-64) {
+				down = 0;
+			}
+		}
+		else {
+			ballystart-=5;
+			if (ballystart < 0) {
+				down = 1;
+			}
+		}
+
+
+		for (ballx = ballxstart; ballx < ballxstart+ballwidth; ballx++) {
+			for (bally = ypos; bally < ballystart+ballheight; bally++) {
+				frame[bally*stride + ballx] = (red << BIT_DISPLAY_RED) | (green << BIT_DISPLAY_GREEN) | (blue << BIT_DISPLAY_BLUE);
+			}
+		}
+
+		// displaying the player 1 paddle based on the defined ball parameters
+		for (paddle1x = paddle1xstart; paddle1x < ((paddle1xstart+paddlewidth)); paddle1x++) {
+			for (paddle1y = paddle1ystart; paddle1y < paddle1ystart+paddleheight; paddle1y++) {
+				frame[(paddle1y*stride) + paddle1x] = (red << BIT_DISPLAY_RED) | (green << BIT_DISPLAY_GREEN) | (blue << BIT_DISPLAY_BLUE);
+			}
+		}
+
+		// displaying the player 2 paddle based on the defined ball parameters
+		for (paddle2x = paddle2xstart; paddle2x < ((paddle2xstart+paddlewidth)); paddle2x+_) {
+			for (paddle2y = paddle2ystart; paddle2y < paddle2ystart+paddleheight; paddle2y++) {
+				frame[paddle2y*stride + paddle2x] = (red << BIT_DISPLAY_RED) | (green << BIT_DISPLAY_GREEN) | (blue << BIT_DISPLAY_BLUE);
+			}
+		}
+
+		// Flush everything out to DDR from the cache
+		Xil_DCacheFlush();
+
+		// Switch active frame to the back buffer (will take place during next vertical blanking period)
+		DisplayChangeFrame(&dispCtrl, buff);
+
+		// Wait for the frame to switch before continuing (so after current frame has been drawn)
+		DisplayWaitForSync(&dispCtrl);
+	}
+
+	return 0;
+}
